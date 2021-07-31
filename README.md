@@ -1,70 +1,19 @@
-# Getting Started with Create React App
+# About IB Resources
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+IB Resources is a platform like no other, providing free resources to IB students to help them succeed. The interactive user interface of the website allows the user to easily navigate to the different pages in the website which have resources for different subjects.
 
-## Available Scripts
+# Why Was It Developed
 
-In the project directory, you can run:
+The idea behind IB Resources originated from the fact that I had recently graduated from the IB Diploma and had a lot of tips and resources that I thought that I could share with IB students currently struggling with the same things I went through in the 2 years of my IB Diploma, therefore I assorted all the resources I had and planned out a website to provide help to current IB Students.
 
-### `npm start`
+# How Was It Developed
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+The project mainly uses HTML, CSS and vanilla Javascript, although a little bit of React.js is utilized in some portions. Firebase was used for the backend although some other APIs were also used to enable the contact us and feedback forms. 
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+# Whats next for IB Resources
 
-### `npm test`
+I plan to add a chat bot to the website that can answer the user's quiestions about the website and also about IB in general. Since it can be hard to manage incoming emails from the users, I decided I could transfer all my advice and guidance to a bot which can interact with the users to help them out. Apart from that, some advanced features are also planned for the website which involve heavy machine learning aspects. The biggest step forward is collecting enough data for student essays and designing an algorithm that can predict the grade that a user's essay can get. This is an ambitious step but I believe that its certainly doable with the current machine learning techniques.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
