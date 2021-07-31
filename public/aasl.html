@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="/__/firebase/8.7.1/firebase-app.js"> </script>
+    <script src="/__/firebase/8.7.1/firebase-analytics.js"> </script>
+    <script src="/__/firebase/init.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./img/mathematics.png" />
+    <title>Mathematics</title>
+</head>
+<body>
+  <div id=root>
+    <!-- Header  -->
+     <canvas class = "header"></canvas>
+     <nav class="navbar">
+       <img class = "ib-image" src="https://www.ibo.org/globalassets/digital-toolkit/logos-and-programme-models/associations-of-ibws/associations-of-ibws_en.png" alt="icon"><h1>  IBResources </h1>
+       <div class="tabBar">
+         <div class="tabs">
+           <a href="./index.html">Home</a>            
+           
+             <a href = "./english.html">Language and Literature</a>
+
+             <a href="./foreign.html">Language Acquisition</a>              
+             <a href="./social.html">Individuals and Societies</a>             
+             <a href="./sciences.html">Sciences</a>   
+             <div class="currentTab">        
+                <a href="./maths.html">Mathematics</a>     
+             </div>            
+             <a href="./core.html">Core Components</a>              
+         </div>
+       </div>
+     </nav>
+     <!-- Sidebar -->
+     <div id= "sidebar" style = "flex-direction: column;justify-items: flex-start;align-self: flex-start;align-content: flex-start;" class="sidebar">
+      <div style = "margin-top: 35%; color: black; font-size: 100; flex: 1; flex-direction: row; align-content: flex-end;height: 4%;width: 100%;" class="sidebar-heading">
+        <button onclick="closeSidebar()" style = "border-color: white;background-color: white;box-shadow: none;" class="cross-button"> X </button>
+      </div>
+      <div  class="subject-header">
+        <img  class = "image" src="./img/mathematics.png" alt="">
+        <h1>Mathematics</h2>
+      </div>
+      <div class="sidebar-tab">
+        <a href="./maths.html">Mathematics AAHL</a>
+      </div>
+      <div class="sidebar-tab">
+        <a href="./aihl.html">Mathematics AIHL</a>
+      </div>
+      <div class="current-sidebar-tab">
+        <a href="./aasl.html">Mathematics AASL</a>
+      </div>
+      <div class="sidebar-tab">
+        <a href="./aisl.html">Mathematics AISL</a>
+      </div>
+    </div>
+     <!-- Body -->    
+      <div class = "content">
+        <div id= "hamburgerMenu" style ="position:fixed;background-color: white; display:none; margin-top: 8%; width:100%;text-align: left;padding-left: 5%;" >  <button style = "position: absolute; font-size: 100%;border-color: white;background-color: white;box-shadow: none;" onclick="showSidebar()"><img style = "height: 2rem;" src="./img/HMIcon.png"></button> </div>
+            <center> <h2 id = "IA-heading" style="padding-top: 10%;margin-left: 20%;"> Student Notes and Other Resources</h2></center>
+        <div style="padding-top: 3% ; margin-left: 20%; width:80%;" id="IAs" class="IAs">
+        <table style= "width:100%;">
+          <tr style = "background-color: #0673bb;" >
+            <th style= "width:33%;padding:2%;color: white;" > Resource Name </th>
+            <th style= "width:28%;padding:2%;color: white;" > Resource Type</th>
+            <th style= "width: 38%;padding:2%;color: white;" > Download</th>
+          </tr>
+          <tr>
+            <td class = "table-box" style= "width:33%;padding:2%;color: black;" > Calculus Notes </td>
+            <td class = "table-box" style= "width:28%;padding:2%;color: black;" > Student Notes </td>
+            <td class = "table-box" style= "width:38%;padding:2%;color: black" > <a target ="_blank" href="https://d78e75dd-39c2-4f2d-a305-c95054bc5706.filesusr.com/ugd/77f91c_9bdedc603dd040d6b2620afd23dc20eb.pdf"> PDF</a></td>
+          </tr>
+          <tr>
+            <td class = "table-box" style= "width:33%;padding:2%;color: black;" > Basic Differentiation </td>
+            <td class = "table-box" style= "width:28%;padding:2%;color: black;" >  Student Notes </td>
+            <td class = "table-box" style= "width:38%;padding:2%;color: black" ><a target ="_blank" href="https://d78e75dd-39c2-4f2d-a305-c95054bc5706.filesusr.com/ugd/77f91c_0355341feb2945a99db127d52ddf6946.docx?dn=BASIC%20DIFFERENTIATION.docx"> Word Document</a></td>
+          </tr>
+          <tr>
+            <td class = "table-box" style= "width:33%;padding:2%;color: black;" > Other Resources  </td>
+            <td class = "table-box" style= "width:28%;padding:2%;color: black;" > Assignments, Questionbanks </td>
+            <td class = "table-box" style= "width:38%;padding:2%;color: black" > <a target ="_blank" href="https://d78e75dd-39c2-4f2d-a305-c95054bc5706.filesusr.com/archives/77f91c_f85363be23334af4a38a7fec37b26988.zip?dn=aaslresources.zip"> ZIP</a></td>
+          </tr>
+          <tr style="display: none;">
+            <h2  style = "display: none;" id="notes-heading">hi </h2>
+            <td style = "display: none;" id="notes">hi </td>
+          </tr>
+          <tr style="display: none;">
+            <h2  style = "display: none;" id="resources-heading">hi </h2>
+            <td style = "display: none;" id="resources">hi </td>
+          </tr>
+        </table>
+        </div>
+      </div>
+      <!-- Footer -->
+     <div class = "footnote"> 
+       <div class="blank-for-sidebar"></div>
+       <div id = "subject-footnote" class = "subject-footnote">
+       <table>
+         <tr> 
+           <th class = "footnote-first-heading"> Quick Links <center><hr class = "line"> </center> </th>
+           <th class = "footnote-heading"> About Us <center><hr class = "line"> </center></th>
+           <th class = "footnote-heading"> Feedback <center><hr class = "line"> </center> </th>
+         </tr>
+         <tr>
+           <td class="footnote-half-column"> 
+                 <ul style="list-style-type:none;">
+                   <li> <div class ="logo"> <img class = "image" src="./img/home.png" alt="home"> <a class = "link" href="./index.html"> Home </a> </div> </li>
+                   <li><div class ="logo"> <img class = "image" src="./img/eng.png" alt="english"> <a class = "link" href = "./english.html">Language and Literature</a> </div></li>
+                   <li><div class ="logo"> <img class = "image" src="./img/languages.png" alt="foreign"><a class = "link" href="./foreign.html">Language Acquisition</a> </div> </li>    
+                   <li><div class ="logo"> <img class = "image" src="./img/test.png" alt="socialstudies"><a class = "link" href="./social.html">Individuals and Societies</a> </div> </li>   
+                   <li> <div class ="logo"> <img class = "image" src ="./img/atom.png" alt="sciences"> <a class = "link" href="./sciences.html">Sciences</a></div> </li>   
+                   <li> <div class ="current-logo"> <img class = "image" src ="./img/mathematics.png" alt="maths">  <a class = "current-link" href="./maths.html">Mathematics</a></div></li>
+                   <li> <div class ="logo"> <img class = "image" src ="./img/syllabus.png" alt="core"> <a class = "link" href="./core.html">Core Components</a></div></li>
+                 </ul>
+            </td> 
+           <td class = "footnote-column">
+            We are students, just like you and we know how hard IB can be. As students from the IB May 2021 batch, we faced several challenges while writing our essays, IAs, EEs, and preparing for exams. IBResources aims to provide the essential resources to IB students so that they can achieve their goals.
+            <br><br> <center> <h3 class = "footnote-heading">  Contact Us</h3> <hr class = "line"> </center> <br><br>
+            Leave us an email at <a class = "link-last" href = "mailto:gdgwsibresources@gmail.com">gdgwsibresources@gmail.com </a> or fill out the <a class = "link-last" href='index.html#contact-form'>Contact Form</a>. Our aim is to help current IB students in any way we can, so feel free to leave us a message.
+           </td>
+           <td class = "footnote-column">
+            <div class="feedback-form">
+              <div class="row">
+                  <div class="col-md-6 col-md-offset-3">
+                      <p> Please provide your feedback below: </p>
+                      <form class = "feedback-form" role="form" method="post" id="reused_form">
+                          <div class="row">
+                              <div class="col-sm-12 form-group">
+                                  <label>How do you rate your overall experience?</label>
+                                  <p>
+                                      <label class="radio-inline">
+                                          <input type="radio" name="experience" id="radio_experience" value="bad" >
+                                          Bad 
+                                      </label>
+                                      <label class="radio-inline">
+                                          <input type="radio" name="experience" id="radio_experience" value="average" >
+                                          Average 
+                                      </label>
+                                      <label class="radio-inline">
+                                          <input type="radio" name="experience" id="radio_experience" value="good" >
+                                          Good 
+                                      </label>
+                                  </p>
+                              </div>
+                          </div>
+                          <div class="row">
+                              <div class="col-sm-12-form-group">
+                                  <textarea class="form-control" type="textarea" name="comments" id="comments" placeholder="Your Comments..." maxlength="6000" rows="7"></textarea>
+                              </div>
+                          </div>
+                          <div class="row">
+                              <div class="col-sm-6-form-group">
+                                  <input placeholder= "Your Name" type="text" class="form-control" id="name" name="name" required>
+                              </div>
+                              <div class="col-sm-6-form-group">
+                                  <input placeholder= "Your Email" type="email" class="form-control" id="email" name="email" required>
+                              </div>
+                          </div>
+                          <div class="row">
+                              <div class="col-sm-12-form-group">
+                                  <button type="submit" class="btn btn-lg btn-primary btn-block" >Send &rarr;</button> 
+                              </div>
+                          </div>
+                         </form>
+                         <div id="success_message" style="width:100%; height:100%; display:none; "> <h3>Posted your feedback successfully!</h3> </div>
+                         <div id="error_message" style="width:100%; height:100%; display:none; "> <h3>Error</h3> Sorry there was an error sending your form. </div>                   
+                       </div>
+                 </div>
+               </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+     </div>      
+     <script src = "logic.js"></script>     
+     <script data-cfasync="false" type="text/javascript" src="index.js"></script>
+ </body>                   
+ </html>

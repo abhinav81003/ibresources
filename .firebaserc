@@ -1,0 +1,23 @@
+{
+  "projects": {
+    "default": "ibresources-9bead",
+    "ibresources": "ibresources-9bead"
+  },
+  "targets": {
+    "ibresources-9bead": {
+      "storage": {
+        "hosting": [
+          "ibresources"
+        ]
+      },
+      "hosting": {
+        "ibresources": [
+          "ibresources-9bead"
+        ],
+        "ibresources-9bead": [
+          "ibresources"
+        ]
+      }
+    }
+  }
+}
