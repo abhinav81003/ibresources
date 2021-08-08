@@ -157,8 +157,10 @@
   font-size: 270%;
 }
 .video {
-  width: 80%;
-  height: 50%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  width: 60%;
+  height: 20%;
 }
 
 .about-and-contributors-panel {
@@ -478,6 +480,7 @@
   width: 100%;
   flex: 1;
   flex-direction: row;
+  overflow-x: hidden;
 }
 
 .footnote-first-heading {
