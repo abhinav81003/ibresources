@@ -6,6 +6,36 @@
   font-family: "Quicksand";
   color: #333;
 }
+
+@media screen and (max-width: 481px) {
+  .desktop {
+    display: none;
+  }
+  .navbar {
+    display: none;
+  }
+  .tabBar {
+    display: none;
+  }
+  .tabs {
+    display: none;
+  }
+  .mobile {
+    opacity: 1;
+    width: 100%;
+    flex-direction: row;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .navbar h1 {
+    opacity: 0;
+  }
+}
+
+.mobile {
+  display: none;
+}
 .ib-image {
   height: 4%;
   width: 4%;
@@ -138,10 +168,11 @@
   margin-top: 2%;
   margin-bottom: 5%;
   position: relative;
-  width: 60%;
+  width: 50%;
   height: 20rem;
   background-color: #d3edff;
   float: left;
+  overflow-y: hidden;
 }
 .about:hover {
   transform: translateX(20);
@@ -152,11 +183,13 @@
   margin-top: 2%;
   margin-bottom: 5%;
   position: relative;
-  width: 40%;
+  width: 50%;
   height: 20rem;
   background-color: #0673bb;
   float: right;
+  overflow-y: hidden;
 }
+
 .contributors:hover {
   transform: translateX(-20);
   transform: translateY(10);
@@ -177,15 +210,18 @@
 }
 
 .about-table {
-  padding-left: 10%;
-  padding-right: 10%;
-  padding-top: 4%;
-  padding-bottom: 8%;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 3%;
+  padding-bottom: 1%;
+  width: 100%;
+  height: 100%;
 }
 
 .about-table-column {
-  width: 50%;
+  width: 100%;
   font-size: 100%;
+  column-span: 1;
 }
 .about-table-column li:hover {
   font-size: 110%;
@@ -202,10 +238,12 @@
   animation-name: intro-animation;
   animation-duration: 1.3s;
   animation-timing-function: ease-in-out;
+  column-span: 2;
 }
 .logo-panel {
   width: 100%;
-  padding-bottom: 10%;
+  height: 60%;
+  padding-bottom: 1%;
   animation-name: fadeIn;
   animation-duration: 2.2s;
 }
@@ -244,6 +282,8 @@
   vertical-align: middle;
   flex-direction: column;
   align-items: flex-start;
+  padding-top: 6%;
+  margin-bottom: 1rem;
 }
 .large-image-2 {
   width: 8rem;
@@ -258,6 +298,8 @@
   vertical-align: middle;
   flex-direction: column;
   align-items: flex-start;
+  padding-top: 6%;
+  margin-bottom: 1rem;
 }
 .large-image-3 {
   width: 8rem;
@@ -272,6 +314,8 @@
   vertical-align: middle;
   flex-direction: column;
   align-items: flex-start;
+  padding-top: 6%;
+  margin-bottom: 1rem;
 }
 .info-box-2 {
   animation-name: fadeIn;
@@ -300,18 +344,21 @@
   margin-top: -0.5rem;
   height: 9rem;
   width: 9rem;
+  margin-bottom: 0.2rem;
   transition: all 0.2s ease-in-out;
 }
 .large-image-2:hover {
   margin-top: -0.5rem;
   height: 9rem;
   width: 9rem;
+  margin-bottom: 0.2rem;
   transition: all 0.2s ease-in-out;
 }
 .large-image-3:hover {
   margin-top: -0.5rem;
   height: 9rem;
   width: 9rem;
+  margin-bottom: 0.2rem;
   transition: all 0.2s ease-in-out;
 }
 .resources {
