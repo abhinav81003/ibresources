@@ -7,12 +7,14 @@
     <script src="/__/firebase/8.7.1/firebase-analytics.js"> </script>
     <script src="/__/firebase/init.js"></script>
     <link rel="stylesheet" href="./style.css">
+    <script src="index.js"></script>
     <link rel="icon" href="./img/atom.png" />
     <title>Sciences</title>
 </head>
 <body>
     <div class="root">
     <!-- Header  -->
+    <div class="desktop">
     <canvas class = "header"></canvas>
     <nav class="navbar">
       <img class = "ib-image" src="https://www.ibo.org/globalassets/digital-toolkit/logos-and-programme-models/associations-of-ibws/associations-of-ibws_en.png" alt="icon"><h1>  IB Resources </h1>
@@ -33,6 +35,7 @@
         </div>
       </div>
     </nav>
+    </div>
     <!-- Sidebar -->
     <div id= "sidebar" style = "flex-direction: column;justify-items: flex-start;align-self: flex-start;align-content: flex-start;" class="sidebar">
       <div style = "margin-top: 35%; color: black; font-size: 100; flex: 1; flex-direction: row; align-content: flex-end;height: 4%;width: 100%;" class="sidebar-heading">
@@ -69,19 +72,19 @@
           </tr>
           <tr>
             <td class = "table-box" style= "width:20%;padding:2%;color: black;" > Sumer Kaistha </td>
-            <td class = "table-box" style= "width:30%;padding:2%;color: black;" > <a target="_blank" href="https://d78e75dd-39c2-4f2d-a305-c95054bc5706.filesusr.com/archives/77f91c_ab852975b23643e78c17100311939317.zip?dn=Sumer%20CS%20IA.zip">ZIP</a></td>
+            <td class = "table-box" style= "width:30%;padding:2%;color: black;" > <a id="resource" target="_blank" href="https://d78e75dd-39c2-4f2d-a305-c95054bc5706.filesusr.com/archives/77f91c_ab852975b23643e78c17100311939317.zip?dn=Sumer%20CS%20IA.zip">ZIP</a></td>
             <td class = "table-box" style= "width:20%;padding:2%;color: black" > HL </td>
             <td class = "table-box" style= "width:30%;padding:2%;color: black" > 6 Points(24/34) </td>
           </tr>
           <tr>
             <td class = "table-box" style= "width:20%;padding:2%;color: black;" > Abhinav Gupta</td>
-            <td class = "table-box" style= "width:30%;padding:2%;color: black;" > <a target="_blank" href="https://d78e75dd-39c2-4f2d-a305-c95054bc5706.filesusr.com/archives/77f91c_812c3f625a3e47bab01212003f899a28.zip?dn=Forms.zip">ZIP </a></td>
+            <td class = "table-box" style= "width:30%;padding:2%;color: black;" > <a id="resource" target="_blank" href="https://d78e75dd-39c2-4f2d-a305-c95054bc5706.filesusr.com/archives/77f91c_812c3f625a3e47bab01212003f899a28.zip?dn=Forms.zip">ZIP </a></td>
             <td class = "table-box" style= "width:20%;padding:2%;color: black" > SL </td>
             <td class = "table-box" style= "width:30%;padding:2%;color: black" > 7(29/34) </td>
           </tr>
           <tr>
             <td class = "table-box" style= "width:20%;padding:2%;color: black;" > Rehaan Chibber</td>
-            <td class = "table-box" style= "width:30%;padding:2%;color: black;" > <a target="_blank" href="./src/RehaanCS.zip">ZIP</a></td>
+            <td class = "table-box" style= "width:30%;padding:2%;color: black;" > <a id="resource" target="_blank" href="./src/RehaanCS.zip">ZIP</a></td>
             <td class = "table-box" style= "width:20%;padding:2%;color: black" > SL </td>
             <td class = "table-box" style= "width:30%;padding:2%;color: black" > 7(29/34) </td>
           </tr>
@@ -99,27 +102,27 @@
         <tr>
           <td class = "table-box" style= "width:33%;padding:2%;color: black;" > HL (2000-2018) </td>
           <td class = "table-box" style= "width:33%;padding:2%;color: black;" > Past Papers </td>
-          <td class = "table-box" style= "width:33%;padding:2%;color: black;" > <a target="_blank" href="https://d78e75dd-39c2-4f2d-a305-c95054bc5706.filesusr.com/archives/77f91c_4d246ed0b4cc4027a2303916f0f53666.zip?dn=Computer_science_HL.zip"> ZIP</a></td>
+          <td class = "table-box" style= "width:33%;padding:2%;color: black;" > <a id="resource" target="_blank" href="https://d78e75dd-39c2-4f2d-a305-c95054bc5706.filesusr.com/archives/77f91c_4d246ed0b4cc4027a2303916f0f53666.zip?dn=Computer_science_HL.zip"> ZIP</a></td>
         </tr>
         <tr>
           <td class = "table-box" style= "width:33%;padding:2%;color: black;" > SL (2000-2018) </td>
           <td class = "table-box" style= "width:33%;padding:2%;color: black;" > Past Papers </td>
-          <td class = "table-box" style= "width:33%;padding:2%;color: black;" > <a target="_blank" href="https://d78e75dd-39c2-4f2d-a305-c95054bc5706.filesusr.com/archives/77f91c_d83a103c05ae42bab327bd1f49400ae2.zip?dn=Computer_science_SL.zip"> ZIP</a></td>
+          <td class = "table-box" style= "width:33%;padding:2%;color: black;" > <a id="resource" target="_blank" href="https://d78e75dd-39c2-4f2d-a305-c95054bc5706.filesusr.com/archives/77f91c_d83a103c05ae42bab327bd1f49400ae2.zip?dn=Computer_science_SL.zip"> ZIP</a></td>
         </tr>
         <tr>
           <td class = "table-box" style= "width:33%;padding:2%;color: black;" > Core Computer Science </td>
           <td class = "table-box" style= "width:33%;padding:2%;color: black;" > E-Book </td>
-          <td class = "table-box" style= "width:33%;padding:2%;color: black;" > <a target="_blank" href="https://d78e75dd-39c2-4f2d-a305-c95054bc5706.filesusr.com/ugd/77f91c_9e97adaca23a4f25b461c99c3cf47d1f.pdf"> PDF</a></td>
+          <td class = "table-box" style= "width:33%;padding:2%;color: black;" > <a id="resource" target="_blank" href="https://d78e75dd-39c2-4f2d-a305-c95054bc5706.filesusr.com/ugd/77f91c_9e97adaca23a4f25b461c99c3cf47d1f.pdf"> PDF</a></td>
         </tr>
         <tr>
           <td class = "table-box" style= "width:33%;padding:2%;color: black;" > Subject Guide </td>
           <td class = "table-box" style= "width:33%;padding:2%;color: black;" > Official IB Guide</td>
-          <td class = "table-box" style= "width:33%;padding:2%;color: black;" > <a target="_blank" href="http://ib.compscihub.net/wp-content/uploads/2015/04/IBCompSciGuide.pdf"> PDF</a></td>
+          <td class = "table-box" style= "width:33%;padding:2%;color: black;" > <a id="resource" target="_blank" href="http://ib.compscihub.net/wp-content/uploads/2015/04/IBCompSciGuide.pdf"> PDF</a></td>
         </tr>
         <tr>
           <td class = "table-box" style= "width:33%;padding:2%;color: black;" > Mr. Lawson's Classroom</td>
           <td class = "table-box" style= "width:33%;padding:2%;color: black;" > Online Resource</td>
-          <td class = "table-box" style= "width:33%;padding:2%;color: black;" > <a target="_blank" href="https://mrlawsonsclassroom.weebly.com/ib---computer-science.html"> Visit Link</a></td>
+          <td class = "table-box" style= "width:33%;padding:2%;color: black;" > <a id="resource" target="_blank" href="https://mrlawsonsclassroom.weebly.com/ib---computer-science.html"> Visit Link</a></td>
         </tr>
       </table>
     </div>
@@ -132,11 +135,11 @@
           </tr>
           <tr>
             <td class = "table-box" style= "width:50%;padding:2%;color: black;" > IA Checklist </td>
-            <td class = "table-box" style= "width:50%;padding:2%;color: black;" > <a target="_blank" href="https://docs.google.com/document/d/1HaLijvMZX0gWJgEcJt4NlIUmPxF4raN-UdZAvHUI31M/edit">Google Docs</a></td>
+            <td class = "table-box" style= "width:50%;padding:2%;color: black;" > <a id="resource" target="_blank" href="https://docs.google.com/document/d/1HaLijvMZX0gWJgEcJt4NlIUmPxF4raN-UdZAvHUI31M/edit">Google Docs</a></td>
           </tr>
           <tr>
             <td class = "table-box" style= "width:50%;padding:2%;color: black;" > Cover Page Format For IA</td>
-            <td class = "table-box" style= "width:50%;padding:2%;color: black;" > <a target="_blank" href="https://d78e75dd-39c2-4f2d-a305-c95054bc5706.filesusr.com/archives/77f91c_9af7f69837a34e17b3a7dc172783caf2.zip?dn=Forms%20(1).zip">ZIP </a></td>
+            <td class = "table-box" style= "width:50%;padding:2%;color: black;" > <a id="resource" target="_blank" href="https://d78e75dd-39c2-4f2d-a305-c95054bc5706.filesusr.com/archives/77f91c_9af7f69837a34e17b3a7dc172783caf2.zip?dn=Forms%20(1).zip">ZIP </a></td>
           </tr>
         </table>
       </div>

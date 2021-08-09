@@ -8,11 +8,13 @@
     <script src="/__/firebase/init.js"></script>
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" href="./img/languages.png">
+    <script src="index.js"></script>
     <title>Language Acquistion</title>
 </head>
 <body>
     <div id=root>
         <!-- Header -->
+        <div class="desktop">
         <canvas class = "header"></canvas>
         <nav class="navbar">
           <img class = "ib-image" src="https://www.ibo.org/globalassets/digital-toolkit/logos-and-programme-models/associations-of-ibws/associations-of-ibws_en.png" alt="icon"><h1>  IB Resources </h1>
@@ -30,6 +32,7 @@
             </div>
           </div>
         </nav>
+        </div>
         <div id= "sidebar" style = "flex-direction: column;justify-items: flex-start;align-self: flex-start;align-content: flex-start;" class="sidebar">
           <div style = "margin-top: 35%; color: black; font-size: 100; flex: 1; flex-direction: row; align-content: flex-end;height: 4%;width: 100%;" class="sidebar-heading">
             <button onclick="closeSidebar()" style = "border-color: white;background-color: white;box-shadow: none;" class="cross-button"> X </button>
@@ -64,23 +67,23 @@
               </tr>
               <tr>
                 <td class = "table-box" style= "width:50%;padding:2%;color: black;" > Panorma 1 Textbook</td>
-                <td class = "table-box" style= "width:50%;padding:2%;color: black;" > <a target="_blank" href="https://d78e75dd-39c2-4f2d-a305-c95054bc5706.filesusr.com/ugd/77f91c_13b5be82e70b4e19bd94fd4b384d09a9.pdf">PDF</a></td>
+                <td class = "table-box" style= "width:50%;padding:2%;color: black;" > <a id="resource" target="_blank" href="https://d78e75dd-39c2-4f2d-a305-c95054bc5706.filesusr.com/ugd/77f91c_13b5be82e70b4e19bd94fd4b384d09a9.pdf">PDF</a></td>
               </tr>
               <tr>
                 <td class = "table-box" style= "width:50%;padding:2%;color: black;" > Le Petit Prince (To Improve Reading Skills)</td>
-                <td class = "table-box" style= "width:50%;padding:2%;color: black;" > <a target="_blank" href="https://d78e75dd-39c2-4f2d-a305-c95054bc5706.filesusr.com/ugd/77f91c_9aedc7f6f393430fb009ec0cfd00db60.pdf">PDF</a></td>
+                <td class = "table-box" style= "width:50%;padding:2%;color: black;" > <a id="resource" target="_blank" href="https://d78e75dd-39c2-4f2d-a305-c95054bc5706.filesusr.com/ugd/77f91c_9aedc7f6f393430fb009ec0cfd00db60.pdf">PDF</a></td>
               </tr>
               <tr>
                 <td class = "table-box" style= "width:50%;padding:2%;color: black;" > French Grammar</td>
-                <td class = "table-box" style= "width:50%;padding:2%;color: black;" > <a target="_blank" href="https://d78e75dd-39c2-4f2d-a305-c95054bc5706.filesusr.com/ugd/77f91c_5db3568e8562415fb17975c03b2a5808.pdf">PDF</a></td>
+                <td class = "table-box" style= "width:50%;padding:2%;color: black;" > <a id="resource" target="_blank" href="https://d78e75dd-39c2-4f2d-a305-c95054bc5706.filesusr.com/ugd/77f91c_5db3568e8562415fb17975c03b2a5808.pdf">PDF</a></td>
               </tr>
               <tr>
                 <td class = "table-box" style= "width:50%;padding:2%;color: black;" > Language Ab Initio Guide</td>
-                <td class = "table-box" style= "width:50%;padding:2%;color: black;" > <a target="_blank" href="https://d78e75dd-39c2-4f2d-a305-c95054bc5706.filesusr.com/ugd/77f91c_f431f50a78ff4e5d9633525ebec2b08b.pdf">PDF</a></td>
+                <td class = "table-box" style= "width:50%;padding:2%;color: black;" > <a id="resource" target="_blank" href="https://d78e75dd-39c2-4f2d-a305-c95054bc5706.filesusr.com/ugd/77f91c_f431f50a78ff4e5d9633525ebec2b08b.pdf">PDF</a></td>
               </tr>
               <tr>
                 <td class = "table-box" style= "width:50%;padding:2%;color: black;" > Program Specific (French Ab) Syllabus</td>
-                <td class = "table-box" style= "width:50%;padding:2%;color: black;" > <a target="_blank" href="https://d78e75dd-39c2-4f2d-a305-c95054bc5706.filesusr.com/ugd/77f91c_772793c843c64f23872732e4275f08d1.pdf">PDF</a></td>
+                <td class = "table-box" style= "width:50%;padding:2%;color: black;" > <a id="resource" target="_blank" href="https://d78e75dd-39c2-4f2d-a305-c95054bc5706.filesusr.com/ugd/77f91c_772793c843c64f23872732e4275f08d1.pdf">PDF</a></td>
               </tr>
             </table>
           </div>
@@ -94,15 +97,15 @@
               </tr>
               <tr>
                 <td class = "table-box" style= "width:50%;padding:2%;color: black;" > Sample IO Questions and Images</td>
-                <td class = "table-box" style= "width:50%;padding:2%;color: black;" > <a target="_blank" href="https://d78e75dd-39c2-4f2d-a305-c95054bc5706.filesusr.com/ugd/77f91c_54b3fc3f538247038baa1e7b1d6d2d2e.docx?dn=Final%20prep.docx">Word Document</a></td>
+                <td class = "table-box" style= "width:50%;padding:2%;color: black;" > <a id="resource" target="_blank" href="https://d78e75dd-39c2-4f2d-a305-c95054bc5706.filesusr.com/ugd/77f91c_54b3fc3f538247038baa1e7b1d6d2d2e.docx?dn=Final%20prep.docx">Word Document</a></td>
               </tr>
               <tr>
                 <td class = "table-box" style= "width:50%;padding:2%;color: black;" > Theme-wise IO Questions and Answers </td>
-                <td class = "table-box" style= "width:50%;padding:2%;color: black;" > <a target="_blank" href="https://d78e75dd-39c2-4f2d-a305-c95054bc5706.filesusr.com/ugd/77f91c_e30383cf9bc94357ac684f8058b1279c.pdf">PDF</a></td>
+                <td class = "table-box" style= "width:50%;padding:2%;color: black;" > <a id="resource" target="_blank" href="https://d78e75dd-39c2-4f2d-a305-c95054bc5706.filesusr.com/ugd/77f91c_e30383cf9bc94357ac684f8058b1279c.pdf">PDF</a></td>
               </tr>
               <tr>
                 <td class = "table-box" style= "width:50%;padding:2%;color: black;" > More Sample Images For IO </td>
-                <td class = "table-box" style= "width:50%;padding:2%;color: black;" > <a target="_blank" href="https://d78e75dd-39c2-4f2d-a305-c95054bc5706.filesusr.com/ugd/77f91c_ec5d7cb8b082408591346c4f75e0dfdf.pdf">PDF</a></td>
+                <td class = "table-box" style= "width:50%;padding:2%;color: black;" > <a id="resource" target="_blank" href="https://d78e75dd-39c2-4f2d-a305-c95054bc5706.filesusr.com/ugd/77f91c_ec5d7cb8b082408591346c4f75e0dfdf.pdf">PDF</a></td>
               </tr>
               <!-- <tr>
                 <td class = "table-box" style= "width:50%;padding:2%;color: black;" > Le Petit Prince (To Improve Reading Skills)</td>
@@ -124,7 +127,7 @@
               </tr>
               <tr>
                 <td class = "table-box" style= "width:50%;padding:2%;color: black;" > Vocabulary Notes By Student </td>
-                <td class = "table-box" style= "width:50%;padding:2%;color: black;" > <a target="_blank" href="https://d78e75dd-39c2-4f2d-a305-c95054bc5706.filesusr.com/ugd/77f91c_28f3e182a0a44ba6b66a782e52aac001.pdf">PDF</a></td>
+                <td class = "table-box" style= "width:50%;padding:2%;color: black;" > <a id="resource" target="_blank" href="https://d78e75dd-39c2-4f2d-a305-c95054bc5706.filesusr.com/ugd/77f91c_28f3e182a0a44ba6b66a782e52aac001.pdf">PDF</a></td>
               </tr>
               
             </table>

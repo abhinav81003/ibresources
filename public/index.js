@@ -1,3 +1,21 @@
+var firebaseConfig = {
+  apiKey: "AIzaSyD89d7WEOfgPed8lOxeHc6yDwT90VStiXc",
+  authDomain: "ibresources-9bead.firebaseapp.com",
+  databaseURL: "https://ibresources-9bead-default-rtdb.firebaseio.com",
+  projectId: "ibresources-9bead",
+  storageBucket: "ibresources-9bead.appspot.com",
+  messagingSenderId: "260608098944",
+  appId: "1:260608098944:web:8bde316205d2798a811c65",
+  measurementId: "G-DXJK14B1TJ"
+};
+firebase.initializeApp(firebaseConfig);
+firebase.analytics();
+
+var resource =document.getElementById('resource');
+resource.onclick = function(event){
+  firebase.analytics().logEvent('Resource_downloaded_or_clicked');
+}
+
 (function() {
     // get all data in form and return object
     function getFormData(form) {

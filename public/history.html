@@ -8,28 +8,31 @@
     <script src="/__/firebase/init.js"></script>
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" href="./img/test.png" />
+    <script src="index.js"></script>
     <title>Individuals and Societies</title>
 </head>
 <body>
     <div id=root>
         <!-- Header  -->
-    <canvas class = "header"></canvas>
-    <nav class="navbar">
-      <img class = "ib-image" src="https://www.ibo.org/globalassets/digital-toolkit/logos-and-programme-models/associations-of-ibws/associations-of-ibws_en.png" alt="icon"><h1>  IBResources </h1>
-      <div class="tabBar">
-        <div class="tabs">
-            <a href="./index.html">Home</a>                     
-            <a href = "./english.html">Language and Literature</a>
-            <a href="./foreign.html">Language Acquisition</a>  
-            <div class="currentTab">                
-              <a href="./social.html">Individuals and Societies</a>  
-            </div>  
-            <a href="./sciences.html">Sciences</a> 
-            <a href="./maths.html">Mathematics</a>                        
-            <a href="./core.html">Core Components</a>              
+    <div class="desktop">
+      <canvas class = "header"></canvas>
+      <nav class="navbar">
+        <img class = "ib-image" src="https://www.ibo.org/globalassets/digital-toolkit/logos-and-programme-models/associations-of-ibws/associations-of-ibws_en.png" alt="icon"><h1>  IBResources </h1>
+        <div class="tabBar">
+          <div class="tabs">
+              <a href="./index.html">Home</a>                     
+              <a href = "./english.html">Language and Literature</a>
+              <a href="./foreign.html">Language Acquisition</a>  
+              <div class="currentTab">                
+                <a href="./social.html">Individuals and Societies</a>  
+              </div>  
+              <a href="./sciences.html">Sciences</a> 
+              <a href="./maths.html">Mathematics</a>                        
+              <a href="./core.html">Core Components</a>              
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </div>
     <!-- Sidebar -->
     <div id= "sidebar" style = "flex-direction: column;justify-items: flex-start;align-self: flex-start;align-content: flex-start;" class="sidebar">
       <div style = "margin-top: 35%; color: black; font-size: 100; flex: 1; flex-direction: row; align-content: flex-end;height: 4%;width: 100%;" class="sidebar-heading">
@@ -67,7 +70,7 @@
         </tr>
         <tr>
           <td class = "table-box" style= "width:50%;padding:2%;color: black;" > How to Prepare for Paper 2</td>
-          <td class = "table-box" style= "width:50%;padding:2%;color: black;" > <a target="_blank"  href="https://d78e75dd-39c2-4f2d-a305-c95054bc5706.filesusr.com/ugd/77f91c_093c5a6cc87449e5a5d480088af99fe4.pdf">PDF</a></td>
+          <td class = "table-box" style= "width:50%;padding:2%;color: black;" > <a id="resource" target="_blank"  href="https://d78e75dd-39c2-4f2d-a305-c95054bc5706.filesusr.com/ugd/77f91c_093c5a6cc87449e5a5d480088af99fe4.pdf">PDF</a></td>
         </tr>
         <tr>
           <td class = "table-box" style= "width:50%;padding:2%;color: black;" > Paper 2 Markbands</td>
@@ -75,7 +78,7 @@
         </tr>
         <tr>
           <td class = "table-box" style= "width:50%;padding:2%;color: black;" > Conflict and Intervention Textbook</td>
-          <td class = "table-box" style= "width:50%;padding:2%;color: black;" > <a target="_blank"  href="https://d78e75dd-39c2-4f2d-a305-c95054bc5706.filesusr.com/ugd/77f91c_59b323678c8a48f3b3fd5b6c24363ada.pdf">PDF</a></td>
+          <td class = "table-box" style= "width:50%;padding:2%;color: black;" > <a id="resource" target="_blank"  href="https://d78e75dd-39c2-4f2d-a305-c95054bc5706.filesusr.com/ugd/77f91c_59b323678c8a48f3b3fd5b6c24363ada.pdf">PDF</a></td>
         </tr>
         <tr style="display: none;">
           <h2  style = "display: none;" id="resources-heading">hi </h2>
@@ -93,19 +96,19 @@
         </tr>
         <tr>
           <td class = "table-box" style= "width:50%;padding:2%;color: black;" > Hitler and Germany (Paper 3)</td>
-          <td class = "table-box" style= "width:50%;padding:2%;color: black;" > <a target="_blank"  href="https://d78e75dd-39c2-4f2d-a305-c95054bc5706.filesusr.com/archives/77f91c_10f51e9c42d44f96aa751fd6ff430b41.zip?dn=Hitler%20and%20Germany.zip">ZIP</a></td>
+          <td class = "table-box" style= "width:50%;padding:2%;color: black;" > <a id="resource" target="_blank"  href="https://d78e75dd-39c2-4f2d-a305-c95054bc5706.filesusr.com/archives/77f91c_10f51e9c42d44f96aa751fd6ff430b41.zip?dn=Hitler%20and%20Germany.zip">ZIP</a></td>
         </tr>
         <tr>
           <td class = "table-box" style= "width:50%;padding:2%;color: black;" > Communist Expansion and Iron Curtain</td>
-          <td class = "table-box" style= "width:50%;padding:2%;color: black;" > <a target="_blank"  href="https://d78e75dd-39c2-4f2d-a305-c95054bc5706.filesusr.com/ugd/77f91c_846d6a335b3f42ff90b03357a63410d6.pptx?dn=communist%20expansion%20and%20iron%20curtain%2012.">PPT</a></td>
+          <td class = "table-box" style= "width:50%;padding:2%;color: black;" > <a id="resource" target="_blank"  href="https://d78e75dd-39c2-4f2d-a305-c95054bc5706.filesusr.com/ugd/77f91c_846d6a335b3f42ff90b03357a63410d6.pptx?dn=communist%20expansion%20and%20iron%20curtain%2012.">PPT</a></td>
         </tr>
         <tr>
           <td class = "table-box" style= "width:50%;padding:2%;color: black;" > Truman Doctrine</td>
-          <td class = "table-box" style= "width:50%;padding:2%;color: black;" > <a target="_blank"  href="https://d78e75dd-39c2-4f2d-a305-c95054bc5706.filesusr.com/ugd/77f91c_6196802589e645e6be7827c6a337b3a0.docx?dn=The%20Truman%20Doctrine.docx">Word Document</a></td>
+          <td class = "table-box" style= "width:50%;padding:2%;color: black;" > <a id="resource" target="_blank"  href="https://d78e75dd-39c2-4f2d-a305-c95054bc5706.filesusr.com/ugd/77f91c_6196802589e645e6be7827c6a337b3a0.docx?dn=The%20Truman%20Doctrine.docx">Word Document</a></td>
         </tr>
         <tr>
           <td class = "table-box" style= "width:50%;padding:2%;color: black;" > Marshall Plan</td>
-          <td class = "table-box" style= "width:50%;padding:2%;color: black;" > <a target="_blank"  href="https://d78e75dd-39c2-4f2d-a305-c95054bc5706.filesusr.com/ugd/77f91c_97bc484222954e41ba77dd1154910e8b.docx?dn=What%20Was%20the%20Marshall%20Plan.docx">Word Document</a></td>
+          <td class = "table-box" style= "width:50%;padding:2%;color: black;" > <a id="resource" target="_blank"  href="https://d78e75dd-39c2-4f2d-a305-c95054bc5706.filesusr.com/ugd/77f91c_97bc484222954e41ba77dd1154910e8b.docx?dn=What%20Was%20the%20Marshall%20Plan.docx">Word Document</a></td>
         </tr>
       </table>
     </div>

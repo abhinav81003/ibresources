@@ -11,13 +11,30 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" href="./favicon.ico" />
     <script src="form.js"></script>
+    <script>
+      var firebaseConfig = {
+        apiKey: "AIzaSyD89d7WEOfgPed8lOxeHc6yDwT90VStiXc",
+        authDomain: "ibresources-9bead.firebaseapp.com",
+        databaseURL: "https://ibresources-9bead-default-rtdb.firebaseio.com",
+        projectId: "ibresources-9bead",
+        storageBucket: "ibresources-9bead.appspot.com",
+        messagingSenderId: "260608098944",
+        appId: "1:260608098944:web:8bde316205d2798a811c65",
+        measurementId: "G-DXJK14B1TJ"
+      };
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+    </script>
     <title> IB Resources </title>
   </head>
   <body>
     <div id=root>
       <!-- Header  -->
       <div class="mobile">
-        <img class = "ib-icon" src="https://www.ibo.org/globalassets/digital-toolkit/logos-and-programme-models/associations-of-ibws/associations-of-ibws_en.png" alt="icon"> <h1>  IB Resources </h1>
+        <div class="mobile-header">
+          <img class = "ib-icon" src="https://www.ibo.org/globalassets/digital-toolkit/logos-and-programme-models/associations-of-ibws/associations-of-ibws_en.png" alt="icon"> <h1>  IB Resources </h1>
+           <button class = "mobile-menu-button" style = "position: relative;border-width: 0; font-size: 100%;background-color: white;box-shadow: none;" onclick="showMobileSidebar()"><img class = "mobile-menu-icon" src="./img/HMIcon.png"></button> 
+        </div>
       </div>
        <div class ="desktop"> 
        <canvas class = "header"></canvas>
@@ -42,12 +59,17 @@
       </div>
        <!-- Body -->
        <div class="content">
+        <div class = "mobile" style="width: 100%;" >
+          <video class="video" autoplay>
+            <source src="./img/stop_motion_book1.mp4">
+          </video>
+        </div>
         <div style="width: 100%;" class="intro">
           <h1>Welcome to IB Resources</h1>
           <h3> Get the help you need to succeed in IB</h3>
         </div>
         <center>
-        <div style="width: 100%;" >
+        <div class = "desktop" style="width: 100%;" >
           <video class="video" autoplay>
             <source src="./img/stop_motion_book1.mp4">
           </video>
@@ -58,24 +80,32 @@
           <div class="info-box">
           <img class = "large-image" src="./img/research.png" alt="IAs">
           <br>
-          Student IAs with Grades
+           <p style = "font-size: small;" class="mobile"><center> IAs </center>  </p>
+          <p class="desktop"> Student IAs with Grades </p> 
         </div>
         </div>
         <div class= "about-logo-column">
           <div class="info-box-2">
             <img class = "large-image-2" src="./img/resources.png" alt="Resources">
           <br>
-          Helpful Online Resources
+          <p style = "font-size: small;" class="mobile"><center>  Web Resources</center> </p>
+          <p class="desktop">  Helpful Online Resources </p>
         </div>
         </div>
         <div class= "about-logo-column">
           <div class="info-box-3">
           <img class = "large-image-3" src="./img/book.png" alt="notes">
           <br>
-          Personal Notes 
+          <p style = "font-size: small;" class="mobile"> <center> Notes </center></p>
+          <p class="desktop"> Personal Notes </p>
         </div>
         </div>
       </div>
+        <div style="width: 100%;height:100px;background-color: white;"></div>
+        <div style="width: 10%;height:10px;background-color: white;"></div>
+        <div style="width: 10%;height:10px;background-color: white;"></div>
+        <div style="width: 10%;height:10px;background-color: white;"></div>
+        <div style="width: 10%;height:10px;background-color: white;"></div>
         <div style="width: 100%;height:100px;background-color: white;"></div>
         <div style="width: 10%;height:10px;background-color: white;"></div>
         <div style="width: 10%;height:10px;background-color: white;"></div>

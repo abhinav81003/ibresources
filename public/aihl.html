@@ -8,11 +8,13 @@
     <script src="/__/firebase/init.js"></script>
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" href="./img/mathematics.png" />
+    <script src="index.js"></script>
     <title>Mathematics</title>
 </head>
 <body>
   <div id=root>
     <!-- Header  -->
+    <div class ="desktop"> 
      <canvas class = "header"></canvas>
      <nav class="navbar">
        <img class = "ib-image" src="https://www.ibo.org/globalassets/digital-toolkit/logos-and-programme-models/associations-of-ibws/associations-of-ibws_en.png" alt="icon"><h1>  IBResources </h1>
@@ -32,6 +34,7 @@
          </div>
        </div>
      </nav>
+     </div>
      <!-- Sidebar -->
      <div id= "sidebar" style = "flex-direction: column;justify-items: flex-start;align-self: flex-start;align-content: flex-start;" class="sidebar">
       <div style = "margin-top: 35%; color: black; font-size: 100; flex: 1; flex-direction: row; align-content: flex-end;height: 4%;width: 100%;" class="sidebar-heading">
@@ -67,7 +70,7 @@
           </tr>
           <tr>
             <td class = "table-box" style= "width:33%;padding:2%;color: black;" > Rehaan Chibber </td>
-            <td class = "table-box" style= "width:38%;padding:2%;color: black;" > <a target ="_blank" href="https://d78e75dd-39c2-4f2d-a305-c95054bc5706.filesusr.com/ugd/77f91c_faa7e9a2d98846b38ba0de3189c5cd04.pdf"> PDF</a></td>
+            <td class = "table-box" style= "width:38%;padding:2%;color: black;" > <a id="resource" target ="_blank" href="https://d78e75dd-39c2-4f2d-a305-c95054bc5706.filesusr.com/ugd/77f91c_faa7e9a2d98846b38ba0de3189c5cd04.pdf"> PDF</a></td>
             <td class = "table-box" style= "width:28%;padding:2%;color: black" > 7 </td>
           </tr>
         </table>
@@ -83,17 +86,17 @@
         <tr>
           <td class = "table-box" style= "width:33%;padding:2%;color: black;" > Specimen Paper 2021 </td>
           <td class = "table-box" style= "width:33%;padding:2%;color: black;" > Past Paper </td>
-          <td class = "table-box" style= "width:33%;padding:2%;color: black;" > <a target="_blank" href="https://d78e75dd-39c2-4f2d-a305-c95054bc5706.filesusr.com/archives/77f91c_40b7cfe81c514fb6b1f4f03426f4474a.zip?dn=Specimen%20Paper.zip"> ZIP</a></td>
+          <td class = "table-box" style= "width:33%;padding:2%;color: black;" > <a id="resource" target="_blank" href="https://d78e75dd-39c2-4f2d-a305-c95054bc5706.filesusr.com/archives/77f91c_40b7cfe81c514fb6b1f4f03426f4474a.zip?dn=Specimen%20Paper.zip"> ZIP</a></td>
         </tr>
         <tr>
           <td class = "table-box" style= "width:33%;padding:2%;color: black;" > Paper 3 Questions from IB</td>
           <td class = "table-box" style= "width:33%;padding:2%;color: black;" > Questions </td>
-          <td class = "table-box" style= "width:33%;padding:2%;color: black;" > <a target="_blank" href="https://d78e75dd-39c2-4f2d-a305-c95054bc5706.filesusr.com/ugd/77f91c_26ab93253a2f4a858c69b2541868663d.pdf"> PDF</a></td>
+          <td class = "table-box" style= "width:33%;padding:2%;color: black;" > <a id="resource" target="_blank" href="https://d78e75dd-39c2-4f2d-a305-c95054bc5706.filesusr.com/ugd/77f91c_26ab93253a2f4a858c69b2541868663d.pdf"> PDF</a></td>
         </tr>
         <tr>
           <td class = "table-box" style= "width:33%;padding:2%;color: black;" > Topic 1 and 4 Questions</td>
           <td class = "table-box" style= "width:33%;padding:2%;color: black;" > Questions </td>
-          <td class = "table-box" style= "width:33%;padding:2%;color: black;" > <a target="_blank" href="https://d78e75dd-39c2-4f2d-a305-c95054bc5706.filesusr.com/archives/77f91c_c5c2112e2a13445da09ae9a5b8309675.zip?dn=maths%20-%20Topic%201%20and%204%20questions%20.zip"> ZIP</a></td>
+          <td class = "table-box" style= "width:33%;padding:2%;color: black;" > <a id="resource" target="_blank" href="https://d78e75dd-39c2-4f2d-a305-c95054bc5706.filesusr.com/archives/77f91c_c5c2112e2a13445da09ae9a5b8309675.zip?dn=maths%20-%20Topic%201%20and%204%20questions%20.zip"> ZIP</a></td>
         </tr>
       </table>
     </div>
@@ -109,12 +112,12 @@
           <tr>
             <td class = "table-box" style= "width:33%;padding:2%;color: black;" > Subject Guide </td>
             <td class = "table-box" style= "width:33%;padding:2%;color: black;" > IB Official Guide </td>
-            <td class = "table-box" style= "width:33%;padding:2%;color: black;" > <a target="_blank" href="https://d78e75dd-39c2-4f2d-a305-c95054bc5706.filesusr.com/ugd/77f91c_e618970095314024acd9b2c6f4763fac.pdf"> PDF </a></td>
+            <td class = "table-box" style= "width:33%;padding:2%;color: black;" > <a  id="resource" target="_blank" href="https://d78e75dd-39c2-4f2d-a305-c95054bc5706.filesusr.com/ugd/77f91c_e618970095314024acd9b2c6f4763fac.pdf"> PDF </a></td>
           </tr>
           <tr>
             <td class = "table-box" style= "width:33%;padding:2%;color: black;" > Revision Village Data Booklet </td>
             <td class = "table-box" style= "width:33%;padding:2%;color: black;" > Detailed Formula Booklet </td>
-            <td class = "table-box" style= "width:33%;padding:2%;color: black;" > <a target="_blank" href="https://d78e75dd-39c2-4f2d-a305-c95054bc5706.filesusr.com/ugd/77f91c_362de67d6c124656a3733e2da18f2480.pdf"> PDF </a></td>
+            <td class = "table-box" style= "width:33%;padding:2%;color: black;" > <a  id="resource" target="_blank" href="https://d78e75dd-39c2-4f2d-a305-c95054bc5706.filesusr.com/ugd/77f91c_362de67d6c124656a3733e2da18f2480.pdf"> PDF </a></td>
           </tr>
         </table>
       </div>

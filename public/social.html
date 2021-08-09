@@ -8,28 +8,31 @@
     <script src="/__/firebase/init.js"></script>
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" href="./img/test.png" />
+    <script src="index.js"></script>
     <title>Individuals and Societies</title>
 </head>
 <body>
     <div id=root>
         <!-- Header  -->
-    <canvas class = "header"></canvas>
-    <nav class="navbar">
-      <img class = "ib-image" src="https://www.ibo.org/globalassets/digital-toolkit/logos-and-programme-models/associations-of-ibws/associations-of-ibws_en.png" alt="icon"><h1>  IB Resources </h1>
-      <div class="tabBar">
-        <div class="tabs">
-            <a href="./index.html">Home</a>                     
-            <a href = "./english.html">Language and Literature</a>
-            <a href="./foreign.html">Language Acquisition</a>  
-            <div class="currentTab">                
-              <a href="./social.html">Individuals and Societies</a>  
-            </div>  
-            <a href="./sciences.html">Sciences</a> 
-            <a href="./maths.html">Mathematics</a>                        
-            <a href="./core.html">Core Components</a>              
+    <div class="desktop">
+      <canvas class = "header"></canvas>
+      <nav class="navbar">
+        <img class = "ib-image" src="https://www.ibo.org/globalassets/digital-toolkit/logos-and-programme-models/associations-of-ibws/associations-of-ibws_en.png" alt="icon"><h1>  IB Resources </h1>
+        <div class="tabBar">
+          <div class="tabs">
+              <a href="./index.html">Home</a>                     
+              <a href = "./english.html">Language and Literature</a>
+              <a href="./foreign.html">Language Acquisition</a>  
+              <div class="currentTab">                
+                <a href="./social.html">Individuals and Societies</a>  
+              </div>  
+              <a href="./sciences.html">Sciences</a> 
+              <a href="./maths.html">Mathematics</a>                        
+              <a href="./core.html">Core Components</a>              
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </div>
     <!-- Sidebar -->
     <div id= "sidebar" style = "flex-direction: column;justify-items: flex-start;align-self: flex-start;align-content: flex-start;" class="sidebar">
       <div style = "margin-top: 35%; color: black; font-size: 100; flex: 1; flex-direction: row; align-content: flex-end;height: 4%;width: 100%;" class="sidebar-heading">
@@ -73,13 +76,13 @@
           </tr>
           <tr>
             <td class = "table-box" style= "width:20%;padding:2%;color: black;" > Rehaan Chibber</td>
-            <td class = "table-box" style= "width:30%;padding:2%;color: black;" > <a href="https://d78e75dd-39c2-4f2d-a305-c95054bc5706.filesusr.com/ugd/77f91c_85e41df7799b4508a9b6bd06c0d4e6a6.pdf">PDF</a></td>
+            <td class = "table-box" style= "width:30%;padding:2%;color: black;" > <a id="resource" href="https://d78e75dd-39c2-4f2d-a305-c95054bc5706.filesusr.com/ugd/77f91c_85e41df7799b4508a9b6bd06c0d4e6a6.pdf">PDF</a></td>
             <td class = "table-box" style= "width:20%;padding:2%;color: black" > HL </td>
             <td class = "table-box" style= "width:30%;padding:2%;color: black" > 7 Points (19/28)</td>
           </tr>
           <tr>
             <td class = "table-box" style= "width:20%;padding:2%;color: black;" > Ria Arora</td>
-            <td class = "table-box" style= "width:30%;padding:2%;color: black;" > <a href="https://d78e75dd-39c2-4f2d-a305-c95054bc5706.filesusr.com/ugd/77f91c_4208aaf0c7fd48ee94bf12bc21a56046.pdf">PDF </a></td>
+            <td class = "table-box" style= "width:30%;padding:2%;color: black;" > <a id="resource" href="https://d78e75dd-39c2-4f2d-a305-c95054bc5706.filesusr.com/ugd/77f91c_4208aaf0c7fd48ee94bf12bc21a56046.pdf">PDF </a></td>
             <td class = "table-box" style= "width:20%;padding:2%;color: black" > HL </td>
             <td class = "table-box" style= "width:30%;padding:2%;color: black" > 7 (20/28) </td>
           </tr>

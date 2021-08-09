@@ -8,11 +8,13 @@
     <script src="/__/firebase/init.js"></script>
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" href="./img/atom.png" />
+    <script src="index.js"></script>
     <title>Sciences</title>
 </head>
 <body>
     <div class="root">
     <!-- Header  -->
+    <div class="desktop">
     <canvas class = "header"></canvas>
     <nav class="navbar">
       <img class = "ib-image" src="https://www.ibo.org/globalassets/digital-toolkit/logos-and-programme-models/associations-of-ibws/associations-of-ibws_en.png" alt="icon"><h1>  IBResources </h1>
@@ -27,12 +29,12 @@
             <div class="currentTab">             
             <a href="./sciences.html">Sciences</a>   
              </div>      
-               <a href="./maths.html">Mathematics</a>     
-                    
+               <a href="./maths.html">Mathematics</a>         
             <a href="./core.html">Core Components</a>              
         </div>
       </div>
     </nav>
+    </div>
     <!-- Sidebar -->
     <div id= "sidebar" style = "flex-direction: column;justify-items: flex-start;align-self: flex-start;align-content: flex-start;" class="sidebar">
       <div style = "margin-top: 35%; color: black; font-size: 100; flex: 1; flex-direction: row; align-content: flex-end;height: 4%;width: 100%;" class="sidebar-heading">
@@ -69,25 +71,25 @@
           </tr>
           <tr>
             <td class = "table-box" style= "width:20%;padding:2%;color: black;" > Abhinav Gupta</td>
-            <td class = "table-box" style= "width:30%;padding:2%;color: black;" > <a target ="_blank" href="https://d78e75dd-39c2-4f2d-a305-c95054bc5706.filesusr.com/ugd/77f91c_9a4c0e17a34447458236c58468d2efcf.pdf"> PDF </a></td>
+            <td class = "table-box" style= "width:30%;padding:2%;color: black;" > <a id="resource" target ="_blank" href="https://d78e75dd-39c2-4f2d-a305-c95054bc5706.filesusr.com/ugd/77f91c_9a4c0e17a34447458236c58468d2efcf.pdf"> PDF </a></td>
             <td class = "table-box" style= "width:20%;padding:2%;color: black" > HL </td>
             <td class = "table-box" style= "width:30%;padding:2%;color: black" > 7 Points (23/24) </td>
           </tr>
           <tr>
             <td class = "table-box" style= "width:20%;padding:2%;color: black;" > Jusjeev Singh</td>
-            <td class = "table-box" style= "width:30%;padding:2%;color: black;" > <a target ="_blank" href="https://d78e75dd-39c2-4f2d-a305-c95054bc5706.filesusr.com/ugd/77f91c_94d07a60745b48548bb13b8e2be3cfe4.pdf">  PDF </a></td>
+            <td class = "table-box" style= "width:30%;padding:2%;color: black;" > <a id="resource" target ="_blank" href="https://d78e75dd-39c2-4f2d-a305-c95054bc5706.filesusr.com/ugd/77f91c_94d07a60745b48548bb13b8e2be3cfe4.pdf">  PDF </a></td>
             <td class = "table-box" style= "width:20%;padding:2%;color: black" > HL </td>
             <td class = "table-box" style= "width:30%;padding:2%;color: black" > 7 Points (20/24) </td>
           </tr>
           <tr>
             <td class = "table-box" style= "width:20%;padding:2%;color: black;" > Anonymous</td>
-            <td class = "table-box" style= "width:30%;padding:2%;color: black;" > <a target="_blank" href="https://d78e75dd-39c2-4f2d-a305-c95054bc5706.filesusr.com/ugd/77f91c_e3584ae16863428d9940e278c4a76c8e.pdf">PDF</a></td>
+            <td class = "table-box" style= "width:30%;padding:2%;color: black;" > <a id="resource" target="_blank" href="https://d78e75dd-39c2-4f2d-a305-c95054bc5706.filesusr.com/ugd/77f91c_e3584ae16863428d9940e278c4a76c8e.pdf">PDF</a></td>
             <td class = "table-box" style= "width:20%;padding:2%;color: black" > SL </td>
             <td class = "table-box" style= "width:30%;padding:2%;color: black" > 6 Points </td>
           </tr>
           <tr>
             <td class = "table-box" style= "width:20%;padding:2%;color: black;" > Sumer Kaistha </td>
-            <td class = "table-box" style= "width:30%;padding:2%;color: black;" > <a target ="_blank" href="https://d78e75dd-39c2-4f2d-a305-c95054bc5706.filesusr.com/ugd/77f91c_a126da0b1a704786a357cda74bb1c147.pdf"> PDF</a></td>
+            <td class = "table-box" style= "width:30%;padding:2%;color: black;" > <a id="resource" target ="_blank" href="https://d78e75dd-39c2-4f2d-a305-c95054bc5706.filesusr.com/ugd/77f91c_a126da0b1a704786a357cda74bb1c147.pdf"> PDF</a></td>
             <td class = "table-box" style= "width:20%;padding:2%;color: black" > SL </td>
             <td class = "table-box" style= "width:30%;padding:2%;color: black" > 5 Points (15/24) </td>
           </tr>
@@ -104,7 +106,7 @@
         <tr>
           <td class = "table-box" style= "width:33%;padding:2%;color: black;" > Past Papers (2016-2020) </td>
           <td class = "table-box" style= "width:33%;padding:2%;color: black;" > HL </td>
-          <td class = "table-box" style= "width:33%;padding:2%;color: black;" > <a target="_blank" href="https://d78e75dd-39c2-4f2d-a305-c95054bc5706.filesusr.com/archives/77f91c_5700e220fdaa4ed797f31b1695f8b8cd.zip?dn=HL.zip"> ZIP</a></td>
+          <td class = "table-box" style= "width:33%;padding:2%;color: black;" > <a id="resource" target="_blank" href="https://d78e75dd-39c2-4f2d-a305-c95054bc5706.filesusr.com/archives/77f91c_5700e220fdaa4ed797f31b1695f8b8cd.zip?dn=HL.zip"> ZIP</a></td>
         </tr>
       </table>
     </div>
@@ -119,22 +121,22 @@
           <tr>
             <td class = "table-box" style= "width:33%;padding:2%;color: black;" > IB Alchemy </td>
             <td class = "table-box" style= "width:33%;padding:2%;color: black;" > IB Chemistry Resources Website </td>
-            <td class = "table-box" style= "width:33%;padding:2%;color: black;" > <a target="_blank" href="https://ibalchemy.com/"> Visit Link</a></td>
+            <td class = "table-box" style= "width:33%;padding:2%;color: black;" > <a id="resource" target="_blank" href="https://ibalchemy.com/"> Visit Link</a></td>
           </tr>
           <tr>
             <td class = "table-box" style= "width:33%;padding:2%;color: black;" > Cambridge Second Edition </td>
             <td class = "table-box" style= "width:33%;padding:2%;color: black;" > Textbook </td>
-            <td class = "table-box" style= "width:33%;padding:2%;color: black;" > <a target="_blank" href="https://d78e75dd-39c2-4f2d-a305-c95054bc5706.filesusr.com/ugd/77f91c_2c6491da7cf84b82a70eea2ceeaa0455.pdf"> PDF</a></td>
+            <td class = "table-box" style= "width:33%;padding:2%;color: black;" > <a id="resource" target="_blank" href="https://d78e75dd-39c2-4f2d-a305-c95054bc5706.filesusr.com/ugd/77f91c_2c6491da7cf84b82a70eea2ceeaa0455.pdf"> PDF</a></td>
           </tr>
           <tr>
             <td class = "table-box" style= "width:33%;padding:2%;color: black;" > Subject Guide</td>
             <td class = "table-box" style= "width:33%;padding:2%;color: black;" > IB Official Guide</td>
-            <td class = "table-box" style= "width:33%;padding:2%;color: black;" > <a target="_blank" href="https://www.ibchem.com/root_pdf/Chemistry_guide_2016.pdf"> PDF </a></td>
+            <td class = "table-box" style= "width:33%;padding:2%;color: black;" > <a id="resource" target="_blank" href="https://www.ibchem.com/root_pdf/Chemistry_guide_2016.pdf"> PDF </a></td>
           </tr>
           <tr>
             <td class = "table-box" style= "width:33%;padding:2%;color: black;" > Data Booklet </td>
             <td class = "table-box" style= "width:33%;padding:2%;color: black;" > IB Official Formula Booklet </td>
-            <td class = "table-box" style= "width:33%;padding:2%;color: black;" > <a target="_blank" href="https://www.iisjaipur.org/International_Wing/Chemistry_data_booklet.pdf"> PDF </a></td>
+            <td class = "table-box" style= "width:33%;padding:2%;color: black;" > <a id="resource" target="_blank" href="https://www.iisjaipur.org/International_Wing/Chemistry_data_booklet.pdf"> PDF </a></td>
           </tr>
           </table>
           </div>

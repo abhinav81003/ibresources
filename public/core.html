@@ -9,10 +9,12 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" href="./img/syllabus.png" />
     <title> Core Components </title>
+    <script src="index.js"></script>
   </head>
 <body>
     <div id=root>
           <!-- Header  -->
+    <div class="desktop">
     <canvas class = "header"></canvas>
     <nav class="navbar">
       <img class = "ib-image" src="https://www.ibo.org/globalassets/digital-toolkit/logos-and-programme-models/associations-of-ibws/associations-of-ibws_en.png" alt="icon"><h1>  IBResources </h1>
@@ -32,6 +34,7 @@
         </div>
       </div>
     </nav>
+    </div>
     <!-- Sidebar -->
     <div id= "sidebar" style = "flex-direction: column;justify-items: flex-start;align-self: flex-start;align-content: flex-start;" class="sidebar">
       <div style = "margin-top: 35%; color: black; font-size: 100; flex: 1; flex-direction: row; align-content: flex-end;height: 4%;width: 100%;" class="sidebar-heading">
@@ -67,29 +70,29 @@
           <tr>
           <td class = "table-box" style= "width:33%;padding:2%;color: black;" > Abhinav Gupta </td>
           <td class = "table-box" style= "width:19%;padding:2%;color: black;" > Physics </td>
-          <td class = "table-box" style= "width:10%;padding:2%;color: black;" > <a target="_blank" href="https://d78e75dd-39c2-4f2d-a305-c95054bc5706.filesusr.com/ugd/77f91c_1ad21a22ecf04f9cb0e2ba66156fa036.pdf"> PDF</a></td>
-          <td class = "table-box" style= "width:10%;padding:2%;color: black;" > <a target="_blank" href="https://d78e75dd-39c2-4f2d-a305-c95054bc5706.filesusr.com/ugd/77f91c_2ff0ee155333430fb7e6b50fab6448e0.pdf"> PDF</a></td>
+          <td class = "table-box" style= "width:10%;padding:2%;color: black;" > <a id="resource" target="_blank" href="https://d78e75dd-39c2-4f2d-a305-c95054bc5706.filesusr.com/ugd/77f91c_1ad21a22ecf04f9cb0e2ba66156fa036.pdf"> PDF</a></td>
+          <td class = "table-box" style= "width:10%;padding:2%;color: black;" > <a id="resource" target="_blank" href="https://d78e75dd-39c2-4f2d-a305-c95054bc5706.filesusr.com/ugd/77f91c_2ff0ee155333430fb7e6b50fab6448e0.pdf"> PDF</a></td>
           <td class = "table-box" style= "width:19%;padding:2%;color: black;" > A (30/34) </td>
           </tr>
           <tr>
             <td class = "table-box" style= "width:33%;padding:2%;color: black;" > Ria Arora </td>
             <td class = "table-box" style= "width:19%;padding:2%;color: black;" > Business Management </td>
-            <td class = "table-box" style= "width:10%;padding:2%;color: black;" > <a target="_blank" href="https://d78e75dd-39c2-4f2d-a305-c95054bc5706.filesusr.com/ugd/77f91c_53738bd57b0846f3bcc4b9eddd4a4fcb.pdf"> PDF</a></td>
-            <td class = "table-box" style= "width:10%;padding:2%;color: black;" > <a target="_blank" href="https://d78e75dd-39c2-4f2d-a305-c95054bc5706.filesusr.com/ugd/77f91c_e7590d3f3ec34d1bbc180fde9d9436af.pdf"> PDF</a></td>
+            <td class = "table-box" style= "width:10%;padding:2%;color: black;" > <a id="resource" target="_blank" href="https://d78e75dd-39c2-4f2d-a305-c95054bc5706.filesusr.com/ugd/77f91c_53738bd57b0846f3bcc4b9eddd4a4fcb.pdf"> PDF</a></td>
+            <td class = "table-box" style= "width:10%;padding:2%;color: black;" > <a id="resource" target="_blank" href="https://d78e75dd-39c2-4f2d-a305-c95054bc5706.filesusr.com/ugd/77f91c_e7590d3f3ec34d1bbc180fde9d9436af.pdf"> PDF</a></td>
             <td class = "table-box" style= "width:19%;padding:2%;color: black;" > A (26/34) </td>
             </tr>
             <tr>
               <td class = "table-box" style= "width:33%;padding:2%;color: black;" > Rehaan Chibber</td>
               <td class = "table-box" style= "width:19%;padding:2%;color: black;" >  Business Management </td>
-              <td class = "table-box" style= "width:10%;padding:2%;color: black;" > <a target="_blank" href="https://d78e75dd-39c2-4f2d-a305-c95054bc5706.filesusr.com/ugd/77f91c_9e38a5a8798f4d528ef71ffb6e5e88df.pdf"> PDF</a></td>
-              <td class = "table-box" style= "width:10%;padding:2%;color: black;" > <a target="_blank" href=""> PDF</a></td>
+              <td class = "table-box" style= "width:10%;padding:2%;color: black;" > <a id="resource" target="_blank" href="https://d78e75dd-39c2-4f2d-a305-c95054bc5706.filesusr.com/ugd/77f91c_9e38a5a8798f4d528ef71ffb6e5e88df.pdf"> PDF</a></td>
+              <td class = "table-box" style= "width:10%;padding:2%;color: black;" > <a id="resource" target="_blank" href=""> PDF</a></td>
               <td class = "table-box" style= "width:19%;padding:2%;color: black;" > B (25/34) </td>
               </tr>
           <tr>
             <td class = "table-box" style= "width:33%;padding:2%;color: black;" > Sumer Kaistha </td>
             <td class = "table-box" style= "width:19%;padding:2%;color: black;" > Mathematics </td>
-            <td class = "table-box" style= "width:10%;padding:2%;color: black;" > <a target="_blank" href="https://d78e75dd-39c2-4f2d-a305-c95054bc5706.filesusr.com/ugd/77f91c_653c5d85a6d24bc7ba0d6adc3f628f0a.pdf"> PDF</a></td>
-            <td class = "table-box" style= "width:10%;padding:2%;color: black;" > <a target="_blank" href=""> PDF</a></td>
+            <td class = "table-box" style= "width:10%;padding:2%;color: black;" > <a id="resource" target="_blank" href="https://d78e75dd-39c2-4f2d-a305-c95054bc5706.filesusr.com/ugd/77f91c_653c5d85a6d24bc7ba0d6adc3f628f0a.pdf"> PDF</a></td>
+            <td class = "table-box" style= "width:10%;padding:2%;color: black;" > <a id="resource" target="_blank" href=""> PDF</a></td>
             <td class = "table-box" style= "width:19%;padding:2%;color: black;" > B (25/34) </td>
             </tr>
             

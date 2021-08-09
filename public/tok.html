@@ -8,30 +8,31 @@
     <script src="/__/firebase/init.js"></script>
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" href="./img/syllabus.png" />
+    <script src="index.js"></script>
     <title> Core Components </title>
   </head>
 <body>
     <div id=root>
-          <!-- Header  -->
-    <canvas class = "header"></canvas>
-    <nav class="navbar">
-      <img class = "ib-image" src="https://www.ibo.org/globalassets/digital-toolkit/logos-and-programme-models/associations-of-ibws/associations-of-ibws_en.png" alt="icon"><h1>  IB Resources </h1>
-      <div class="tabBar">
-        <div class="tabs">
-            <a href="./index.html">Home</a>                     
-            <a href = "./english.html">Language and Literature</a>
-            <a href="./foreign.html">Language Acquisition</a>  
-                         
+    <!-- Header  -->
+    <div class="desktop"> 
+      <canvas class = "header"></canvas>
+      <nav class="navbar">
+        <img class = "ib-image" src="https://www.ibo.org/globalassets/digital-toolkit/logos-and-programme-models/associations-of-ibws/associations-of-ibws_en.png" alt="icon"><h1>  IB Resources </h1>
+        <div class="tabBar">
+          <div class="tabs">
+              <a href="./index.html">Home</a>                     
+              <a href = "./english.html">Language and Literature</a>
+              <a href="./foreign.html">Language Acquisition</a>              
               <a href="./social.html">Individuals and Societies</a>  
-           
-            <a href="./sciences.html">Sciences</a> 
-            <a href="./maths.html">Mathematics</a>   
-            <div class="currentTab">                        
-            <a href="./core.html">Core Components</a>          
-          </div>      
+              <a href="./sciences.html">Sciences</a> 
+              <a href="./maths.html">Mathematics</a>   
+              <div class="currentTab">                        
+              <a href="./core.html">Core Components</a>          
+            </div>      
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </div>
     <!-- Sidebar -->
     <div id= "sidebar" style = "flex-direction: column;justify-items: flex-start;align-self: flex-start;align-content: flex-start;" class="sidebar">
       <div style = "margin-top: 35%; color: black; font-size: 100; flex: 1; flex-direction: row; align-content: flex-end;height: 4%;width: 100%;" class="sidebar-heading">
@@ -66,25 +67,25 @@
           <tr>
             <td class = "table-box" style= "width:32%;padding:2%;color: black;" > Abhinav Gupta</td>
             <td class = "table-box" style= "width:24%;padding:2%;color: black;" >  Labels are a neccessity in the organization of knowledge, but they also constrain our understanding.”  </td>
-            <td class = "table-box" style= "width:15%;padding:2%;color: black;" > <a target="_blank" href="https://d78e75dd-39c2-4f2d-a305-c95054bc5706.filesusr.com/ugd/77f91c_734fb7e831104c7db0319b39c47437e9.pdf"> Essay</a><a target="_blank" href="https://d78e75dd-39c2-4f2d-a305-c95054bc5706.filesusr.com/ugd/77f91c_9ad470110e264315b41154ab5059490e.pdf">   TKPPF</a></td>
+            <td class = "table-box" style= "width:15%;padding:2%;color: black;" > <a id="resource" target="_blank" href="https://d78e75dd-39c2-4f2d-a305-c95054bc5706.filesusr.com/ugd/77f91c_734fb7e831104c7db0319b39c47437e9.pdf"> Essay</a><a target="_blank" href="https://d78e75dd-39c2-4f2d-a305-c95054bc5706.filesusr.com/ugd/77f91c_9ad470110e264315b41154ab5059490e.pdf">   TKPPF</a></td>
             <td class = "table-box" style= "width:19%;padding:2%;color: black;" > A (9/10) </td>
             </tr>
             <tr>
               <td class = "table-box" style= "width:32%;padding:2%;color: black;" > Jusjeev Singh</td>
               <td class = "table-box" style= "width:24%;padding:2%;color: black;" >  “Accepting knowledge claims always involves an element of trust." </td>
-              <td class = "table-box" style= "width:15%;padding:2%;color: black;" > <a target="_blank" href="https://d78e75dd-39c2-4f2d-a305-c95054bc5706.filesusr.com/ugd/77f91c_3e39208a3bec4e8ca9d1fcbf684ae899.pdf"> Essay</a><a target="_blank" href="https://d78e75dd-39c2-4f2d-a305-c95054bc5706.filesusr.com/ugd/77f91c_8e057b8fdfab4b40b1c751b025265ce4.pdf">   TKPPF</a></td>
+              <td class = "table-box" style= "width:15%;padding:2%;color: black;" > <a id="resource" target="_blank" href="https://d78e75dd-39c2-4f2d-a305-c95054bc5706.filesusr.com/ugd/77f91c_3e39208a3bec4e8ca9d1fcbf684ae899.pdf"> Essay</a><a target="_blank" href="https://d78e75dd-39c2-4f2d-a305-c95054bc5706.filesusr.com/ugd/77f91c_8e057b8fdfab4b40b1c751b025265ce4.pdf">   TKPPF</a></td>
               <td class = "table-box" style= "width:19%;padding:2%;color: black;" > B (7/10) </td>
               </tr>
               <tr>
                 <td class = "table-box" style= "width:32%;padding:2%;color: black;" > Ria Arora</td>
                 <td class = "table-box" style= "width:24%;padding:2%;color: black;" >  “Avoiding bias seems a commendable goal, but this fails to recognize the positive role that bias can play in the pursuit of knowledge.”  </td>
-                <td class = "table-box" style= "width:15%;padding:2%;color: black;" > <a target="_blank" href="https://d78e75dd-39c2-4f2d-a305-c95054bc5706.filesusr.com/ugd/77f91c_90715f5fb7744472b99f32d09502dbff.pdf"> Essay</a><a target="_blank" href="https://d78e75dd-39c2-4f2d-a305-c95054bc5706.filesusr.com/ugd/77f91c_e27d32d761384349aaaef2d76d827e81.pdf">   TKPPF</a></td>
+                <td class = "table-box" style= "width:15%;padding:2%;color: black;" > <a id="resource" target="_blank" href="https://d78e75dd-39c2-4f2d-a305-c95054bc5706.filesusr.com/ugd/77f91c_90715f5fb7744472b99f32d09502dbff.pdf"> Essay</a><a target="_blank" href="https://d78e75dd-39c2-4f2d-a305-c95054bc5706.filesusr.com/ugd/77f91c_e27d32d761384349aaaef2d76d827e81.pdf">   TKPPF</a></td>
                 <td class = "table-box" style= "width:19%;padding:2%;color: black;" > B (7/10) </td>
                 </tr>
                 <tr>
                   <td class = "table-box" style= "width:32%;padding:2%;color: black;" > Anonymous </td>
                   <td class = "table-box" style= "width:24%;padding:2%;color: black;" > “Avoiding bias seems a commendable goal, but this fails to recognize the positive role that bias can play in the pursuit of knowledge.” </td>
-                  <td class = "table-box" style= "width:15%;padding:2%;color: black;" > <a target="_blank" href="https://d78e75dd-39c2-4f2d-a305-c95054bc5706.filesusr.com/ugd/77f91c_797fc554d4cc42119309dd94204d9533.pdf"> Essay</a></td>
+                  <td class = "table-box" style= "width:15%;padding:2%;color: black;" > <a id="resource" target="_blank" href="https://d78e75dd-39c2-4f2d-a305-c95054bc5706.filesusr.com/ugd/77f91c_797fc554d4cc42119309dd94204d9533.pdf"> Essay</a></td>
                   <td class = "table-box" style= "width:19%;padding:2%;color: black;" > A </td>
                   </tr>
           <tr style="display: none;">
@@ -104,26 +105,26 @@
           </tr>
           <tr>
             <td class = "table-box" style= "width:32%;padding:2%;color: black;" > Sumer Kaistha</td>
-            <td class = "table-box" style= "width:24%;padding:2%;color: black;" > <a target="_blank" href="https://d78e75dd-39c2-4f2d-a305-c95054bc5706.filesusr.com/ugd/77f91c_a90b175a682d44138c79ad4f0f1cffe8.pdf"> PDF</a></td>
-            <td class = "table-box" style= "width:15%;padding:2%;color: black;" > <a target="_blank" href="https://d78e75dd-39c2-4f2d-a305-c95054bc5706.filesusr.com/ugd/77f91c_9e38a5a8798f4d528ef71ffb6e5e88df.pdf">  PDF</a></td>
+            <td class = "table-box" style= "width:24%;padding:2%;color: black;" > <a id="resource" target="_blank" href="https://d78e75dd-39c2-4f2d-a305-c95054bc5706.filesusr.com/ugd/77f91c_a90b175a682d44138c79ad4f0f1cffe8.pdf"> PDF</a></td>
+            <td class = "table-box" style= "width:15%;padding:2%;color: black;" > <a id="resource" target="_blank" href="https://d78e75dd-39c2-4f2d-a305-c95054bc5706.filesusr.com/ugd/77f91c_9e38a5a8798f4d528ef71ffb6e5e88df.pdf">  PDF</a></td>
             <td class = "table-box" style= "width:19%;padding:2%;color: black;" > A(8/10) </td>
             </tr>
             <tr>
               <td class = "table-box" style= "width:32%;padding:2%;color: black;" > Jusjeev Singh </td>
-              <td class = "table-box" style= "width:24%;padding:2%;color: black;" > <a target="_blank" href="https://d78e75dd-39c2-4f2d-a305-c95054bc5706.filesusr.com/ugd/77f91c_c2e001e5031348568adbed140167aa1a.pptx?dn=TOK%20PPT%20Jusjeev.pptx">PPT</a></td>
-              <td class = "table-box" style= "width:15%;padding:2%;color: black;" > <a target="_blank" href="https://d78e75dd-39c2-4f2d-a305-c95054bc5706.filesusr.com/ugd/77f91c_6e1bc62cfe5c427182d5629af50bf88c.pdf"> PDF</a></td>
+              <td class = "table-box" style= "width:24%;padding:2%;color: black;" > <a id="resource" target="_blank" href="https://d78e75dd-39c2-4f2d-a305-c95054bc5706.filesusr.com/ugd/77f91c_c2e001e5031348568adbed140167aa1a.pptx?dn=TOK%20PPT%20Jusjeev.pptx">PPT</a></td>
+              <td class = "table-box" style= "width:15%;padding:2%;color: black;" > <a id="resource" target="_blank" href="https://d78e75dd-39c2-4f2d-a305-c95054bc5706.filesusr.com/ugd/77f91c_6e1bc62cfe5c427182d5629af50bf88c.pdf"> PDF</a></td>
               <td class = "table-box" style= "width:19%;padding:2%;color: black;" > A(7/10) </td>
               </tr>
               <tr>
                 <td class = "table-box" style= "width:32%;padding:2%;color: black;" > Rehaan Chibber </td>
-                <td class = "table-box" style= "width:24%;padding:2%;color: black;" > <a target="_blank" href="https://d78e75dd-39c2-4f2d-a305-c95054bc5706.filesusr.com/ugd/77f91c_00f6e216accb480a89b706ccf8beba03.pptx?dn=TOK%20presentation%20Rehaan.pptx">PPT</a> <a target="_blank" href="https://d78e75dd-39c2-4f2d-a305-c95054bc5706.filesusr.com/ugd/77f91c_8f250683aeaa470ca2b3f82f7f0d6a45.docx?dn=TOK%20presentation%20notes.docx">   Script</a></td>
-                <td class = "table-box" style= "width:15%;padding:2%;color: black;" > <a target="_blank" href="https://d78e75dd-39c2-4f2d-a305-c95054bc5706.filesusr.com/ugd/77f91c_754e7043fdf448b2be7a3be2206a322d.pdf"> PDF</a></td>
+                <td class = "table-box" style= "width:24%;padding:2%;color: black;" > <a id="resource" target="_blank" href="https://d78e75dd-39c2-4f2d-a305-c95054bc5706.filesusr.com/ugd/77f91c_00f6e216accb480a89b706ccf8beba03.pptx?dn=TOK%20presentation%20Rehaan.pptx">PPT</a> <a target="_blank" href="https://d78e75dd-39c2-4f2d-a305-c95054bc5706.filesusr.com/ugd/77f91c_8f250683aeaa470ca2b3f82f7f0d6a45.docx?dn=TOK%20presentation%20notes.docx">   Script</a></td>
+                <td class = "table-box" style= "width:15%;padding:2%;color: black;" > <a id="resource" target="_blank" href="https://d78e75dd-39c2-4f2d-a305-c95054bc5706.filesusr.com/ugd/77f91c_754e7043fdf448b2be7a3be2206a322d.pdf"> PDF</a></td>
                 <td class = "table-box" style= "width:19%;padding:2%;color: black;" > A(7/10) </td>
                 </tr>
                 <tr>
                   <td class = "table-box" style= "width:32%;padding:2%;color: black;" > Ria Arora </td>
-                  <td class = "table-box" style= "width:24%;padding:2%;color: black;" > <a target="_blank" href="https://d78e75dd-39c2-4f2d-a305-c95054bc5706.filesusr.com/ugd/77f91c_158a0f55d5ce4cfbb214d4962dff1b07.pdf">PDF</a></td>
-                  <td class = "table-box" style= "width:15%;padding:2%;color: black;" > <a target="_blank" href="https://d78e75dd-39c2-4f2d-a305-c95054bc5706.filesusr.com/ugd/77f91c_90291f546e5a4d51b6c22bb9844b1080.pdf"> PDF</a></td>
+                  <td class = "table-box" style= "width:24%;padding:2%;color: black;" > <a id="resource" target="_blank" href="https://d78e75dd-39c2-4f2d-a305-c95054bc5706.filesusr.com/ugd/77f91c_158a0f55d5ce4cfbb214d4962dff1b07.pdf">PDF</a></td>
+                  <td class = "table-box" style= "width:15%;padding:2%;color: black;" > <a id="resource" target="_blank" href="https://d78e75dd-39c2-4f2d-a305-c95054bc5706.filesusr.com/ugd/77f91c_90291f546e5a4d51b6c22bb9844b1080.pdf"> PDF</a></td>
                   <td class = "table-box" style= "width:19%;padding:2%;color: black;" > A(7/10) </td>
                   </tr>
         </table>
