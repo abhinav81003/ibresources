@@ -76,13 +76,14 @@
   display: flex;
   height: max-content;
   margin-top: 0;
-  height: 59.2%;
+  height: 1.4rem;
 }
 
 .tabs {
   margin-top: 0;
   border: none;
   display: flex;
+  height: 100%;
   width: max-content;
   align-items: top;
   text-align: center;
@@ -92,6 +93,7 @@
   color: black;
   padding: 0.86rem;
   font-size: 0.86rem;
+  height: 100%;
   font-weight: 400;
   text-decoration: none;
   align-content: center;
@@ -113,7 +115,7 @@
   padding: 0.86rem;
   font-size: 0.86rem;
   background-color: #0673bb;
-  height: 45%;
+  height: 100%;
   color: white;
   position: relative;
   display: flex;
@@ -158,7 +160,7 @@
 }
 .video {
   padding-top: 3%;
-  padding-bottom: 3%;
+  padding-top: 3%;
   width: 60%;
   height: 20%;
 }
@@ -214,7 +216,7 @@
 .about-table {
   padding-left: 3%;
   padding-right: 3%;
-  padding-top: 3%;
+  padding-top: 1%;
   padding-bottom: 1%;
   width: 100%;
   height: 100%;
@@ -228,7 +230,9 @@
 .about-table-column li:hover {
   font-size: 110%;
 }
-
+.contributors-heading-row {
+  column-span: 2;
+}
 .contributors-heading {
   opacity: 1;
   transition: all 0.3s ease-in-out;
@@ -236,11 +240,15 @@
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-size: 270%;
   color: #d3edff;
-  padding-bottom: 4%;
+  padding-top: 2%;
   animation-name: intro-animation;
   animation-duration: 1.3s;
   animation-timing-function: ease-in-out;
   column-span: 2;
+}
+.contributors-table {
+  margin-top: 3%;
+  font-size: 100%;
 }
 .logo-panel {
   width: 100%;
@@ -506,9 +514,10 @@
 .line {
   width: 30%;
   align-self: center;
-  margin-top: 4%;
+  margin-top: 1%;
   transition: all 3s ease-in-out;
 }
+
 .footnote-column {
   width: 33%;
   padding-right: 2%;
