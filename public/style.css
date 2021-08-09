@@ -8,6 +8,12 @@
 }
 
 @media only screen and (max-width: 601px) {
+  * {
+    margin: 0;
+    font-family: "Quicksand";
+    color: #333;
+    overflow-x: hidden;
+  }
   .footnote {
     display: none;
   }
@@ -32,31 +38,47 @@
     display: flex;
     flex-direction: row;
     width: 100%;
-    margin-top: 0;
-    top: 0;
     position: fixed;
     background: white;
     padding: 2%;
-    height: 5%;
+    height: 6%;
     justify-content: center;
     align-items: center;
     vertical-align: center;
     z-index: 4;
-    box-shadow: rgb(201, 198, 198) 2px 2px 2px;
+    box-shadow: rgb(139, 139, 139) 2px 2px 2px;
   }
   .mobile-header h1 {
     position: fixed;
     left: 15%;
-    top: 1%;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    top: 1.5%;
+    font-family: "Quicksand";
+  }
+  .mobile-menu {
+    position: fixed;
+    display: none;
+    opacity: 1;
+    right: 0;
+    height: 100%;
+    width: 70%;
+    background-color: rgb(223, 222, 222);
+  }
+  .mobile-menu-tabs {
+    flex: 1;
+    margin-top: 7%;
+    padding-left: 4%;
+    padding-left: 4%;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
   .ib-icon {
     height: 3rem;
     width: 3rem;
     position: fixed;
     left: 1%;
-    top: 1%;
+    top: 1.5%;
     flex-direction: column;
     align-self: flex-start;
   }
@@ -68,7 +90,7 @@
     height: 2rem;
     position: fixed;
     right: 5.5%;
-    top: 1.5%;
+    top: 2%;
   }
   .mobile-menu-button {
     align-self: flex-end;
@@ -83,11 +105,13 @@
   .intro h1 {
     color: black;
     font-family: "Quicksand";
-    font-size: 180%;
+    font-size: 110%;
+    animation-name: intro-animation;
+    animation-duration: 1.3s;
+    animation-timing-function: ease-in-out;
   }
   .video {
-    padding-top: 3%;
-    padding-top: 3%;
+    margin-top: 10%;
     width: 100%;
     height: 20%;
   }
@@ -130,7 +154,7 @@
     animation-duration: 0.8s;
     animation-timing-function: linear;
     animation-iteration-count: 1;
-    animation-delay: 2.5s;
+    animation-delay: 2s;
     vertical-align: middle;
     flex-direction: column;
     align-items: flex-start;
@@ -145,13 +169,17 @@
     flex-basis: 10%;
     animation-name: zoomIn;
     animation-duration: 0.8s;
-    animation-delay: 3s;
+    animation-delay: 2s;
     animation-timing-function: linear;
     animation-iteration-count: 1;
     vertical-align: middle;
     flex-direction: column;
     align-items: flex-start;
     padding-top: 5%;
+    margin-bottom: 1rem;
+  }
+  .mobile-text {
+    display: flex;
   }
   .about-and-contributors-panel {
     max-width: 100%;
@@ -168,13 +196,42 @@
   }
   .contributors {
     margin-top: 0%;
-    margin-bottom: 5%;
+    margin-bottom: 4%;
     position: relative;
+    padding-top: 4%;
     width: 100%;
     height: 20rem;
     background-color: #0673bb;
     float: none;
     overflow: hidden;
+  }
+  .contributors-heading {
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 200%;
+    color: #d3edff;
+    padding-top: 2%;
+    animation-name: intro-animation;
+    animation-duration: 1.3s;
+    animation-timing-function: ease-in-out;
+    column-span: 2;
+  }
+
+  .blank {
+    display: none;
+  }
+  .contact-heading h2 {
+    animation-name: intro-animation;
+    animation-duration: 1.3s;
+    animation-timing-function: ease-in-out;
+    padding-right: 10px;
+    transition: all 0.5s ease-in-out;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    color: #0673bb;
+    font-size: 200%;
   }
   .submit-button {
     background-color: #0673bb;
@@ -208,6 +265,15 @@
   }
   .about-and-contributors-panel {
     color: #333;
+  }
+  .intro {
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    align-items: center;
+    animation-name: intro-animation;
+    animation-duration: 1.3s;
+    animation-timing-function: ease-in-out;
+    margin-top: 9%;
   }
   .about {
     margin-top: 2%;
@@ -295,6 +361,64 @@
     padding-top: 6%;
     margin-bottom: 1rem;
   }
+  .info-box-2 {
+    animation-name: fadeIn;
+    animation-duration: 2.02s;
+    animation-delay: 0.74s;
+  }
+  .info-box-3 {
+    animation-name: fadeIn;
+    animation-duration: 2.2s;
+    animation-delay: 1.2s;
+  }
+  .large-image:hover {
+    margin-top: -0.5rem;
+    height: 9rem;
+    width: 9rem;
+    margin-bottom: 0.2rem;
+    transition: all 0.2s ease-in-out;
+  }
+  .large-image-2:hover {
+    margin-top: -0.5rem;
+    height: 9rem;
+    width: 9rem;
+    margin-bottom: 0.2rem;
+    transition: all 0.2s ease-in-out;
+  }
+  .large-image-3:hover {
+    margin-top: -0.5rem;
+    height: 9rem;
+    width: 9rem;
+    margin-bottom: 0.2rem;
+    transition: all 0.2s ease-in-out;
+  }
+  .mobile-text {
+    display: none;
+  }
+  .contributors-heading {
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 270%;
+    color: #d3edff;
+    padding-top: 2%;
+    animation-name: intro-animation;
+    animation-duration: 1.3s;
+    animation-timing-function: ease-in-out;
+    column-span: 2;
+  }
+  .contact-heading h2 {
+    animation-name: intro-animation;
+    animation-duration: 1.3s;
+    animation-timing-function: ease-in-out;
+    padding-right: 10px;
+    transition: all 0.5s ease-in-out;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    color: #0673bb;
+    font-size: 240%;
+  }
   .submit-button {
     background-color: #0673bb;
     border-radius: 10px 10px;
@@ -314,7 +438,7 @@
 .ib-image {
   height: 4%;
   width: 4%;
-  margin-top: 2rem;
+  margin-top: 0rem;
 }
 .header {
   height: 2.1rem;
@@ -329,31 +453,32 @@
   display: flex;
   align-items: center;
   max-width: 100%;
-  margin-top: 0;
+  margin-top: 2.1rem;
   top: 0;
   position: fixed;
   background: white;
   z-index: 1;
-  box-shadow: rgb(201, 198, 198) 2px 2px 2px;
+  box-shadow: rgb(122, 122, 122) 5px 3px 5px;
 }
 
 .navbar h1 {
   padding-right: 1%;
   padding-left: 1%;
-  margin-top: 2rem;
+  margin-top: 0;
   width: 100%;
 }
 
 .tabBar {
   position: absolute;
-  top: 2.1rem;
+  top: 0;
   right: 0rem;
   display: flex;
-  height: max-content;
   margin-top: 0;
-  height: 1.4rem;
+  height: 45.9%;
+  box-shadow: rgb(201, 198, 198) 2px 2px 2px;
 }
-
+@media only screen and (max-width: 1200px), (min-width: 1000px) {
+}
 .tabs {
   margin-top: 0;
   border: none;
@@ -418,15 +543,6 @@
   }
 }
 
-.intro {
-  transition: all 0.3s ease-in-out;
-  text-align: center;
-  align-items: center;
-  animation-name: intro-animation;
-  animation-duration: 1.3s;
-  animation-timing-function: ease-in-out;
-  margin-top: 10%;
-}
 .intro h1 {
   color: #0673bb;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
@@ -492,19 +608,7 @@
 .contributors-heading-row {
   column-span: 2;
 }
-.contributors-heading {
-  opacity: 1;
-  transition: all 0.3s ease-in-out;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  font-size: 270%;
-  color: #d3edff;
-  padding-top: 2%;
-  animation-name: intro-animation;
-  animation-duration: 1.3s;
-  animation-timing-function: ease-in-out;
-  column-span: 2;
-}
+
 .contributors-table {
   margin-top: 3%;
   font-size: 100%;
@@ -521,39 +625,6 @@
     opacity: 1;
   }
 }
-
-.info-box-2 {
-  animation-name: fadeIn;
-  animation-duration: 2.02s;
-  animation-delay: 0.74s;
-}
-.info-box-3 {
-  animation-name: fadeIn;
-  animation-duration: 2.2s;
-  animation-delay: 1.2s;
-}
-
-.large-image:hover {
-  margin-top: -0.5rem;
-  height: 9rem;
-  width: 9rem;
-  margin-bottom: 0.2rem;
-  transition: all 0.2s ease-in-out;
-}
-.large-image-2:hover {
-  margin-top: -0.5rem;
-  height: 9rem;
-  width: 9rem;
-  margin-bottom: 0.2rem;
-  transition: all 0.2s ease-in-out;
-}
-.large-image-3:hover {
-  margin-top: -0.5rem;
-  height: 9rem;
-  width: 9rem;
-  margin-bottom: 0.2rem;
-  transition: all 0.2s ease-in-out;
-}
 .resources {
   width: 7rem;
   height: 7rem;
@@ -562,12 +633,6 @@
   justify-content: center;
 }
 
-.large-image:hover {
-  margin-top: -0.5rem;
-  height: 9rem;
-  width: 9rem;
-  transition: all 0.2s ease-in-out;
-}
 .contact {
   float: none;
   position: relative;
@@ -577,18 +642,6 @@
   align-content: center;
   text-align: center;
   justify-content: center;
-}
-
-.contact-heading h2 {
-  animation-name: intro-animation;
-  animation-duration: 1.3s;
-  animation-timing-function: ease-in-out;
-  padding-right: 10px;
-  transition: all 0.5s ease-in-out;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  color: #0673bb;
-  font-size: 240%;
 }
 
 .contact-text {

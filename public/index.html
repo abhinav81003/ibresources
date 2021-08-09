@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" href="./favicon.ico" />
     <script src="form.js"></script>
+    <script src ="logic.js"></script>
     <script>
       var firebaseConfig = {
         apiKey: "AIzaSyD89d7WEOfgPed8lOxeHc6yDwT90VStiXc",
@@ -28,7 +29,23 @@
     <title> IB Resources </title>
   </head>
   <body>
-    <div id=root>
+      <div class="mobile">
+        <div id = "mobileMenu" class="mobile-menu">
+          <div class="menu-tabs">
+            <button onclick="closeMobileMenu()" style = " z-index: 3; border-color: white;background-color: white;box-shadow: none;" class="cross-button"> X </button>           
+            <div class="currentTab">
+            <a href="./index.html"> Home </a>
+            </div>
+              <a href = "./english.html">Language and Literature</a>
+              <a href="./foreign.html">Language Acquisition</a>              
+              <a href="./social.html">Individuals and Societies</a>             
+              <a href="./sciences.html">Sciences</a>              
+              <a href="./maths.html">Mathematics</a>              
+              <a href="./core.html">Core Components</a>              
+          </div>
+        </div>
+      </div>
+    <div id = "root" >
       <!-- Header  -->
       <div class="mobile">
         <div class="mobile-header">
@@ -36,10 +53,11 @@
            <button class = "mobile-menu-button" style = "position: relative;border-width: 0; font-size: 100%;background-color: white;box-shadow: none;" onclick="showMobileSidebar()"><img class = "mobile-menu-icon" src="./img/HMIcon.png"></button> 
         </div>
       </div>
+      
        <div class ="desktop"> 
        <canvas class = "header"></canvas>
        <div class = "navbar-and-header">
-        <nav class="navbar">
+        <nav id = "navbar" class="navbar">
           <img class = "ib-image" src="https://www.ibo.org/globalassets/digital-toolkit/logos-and-programme-models/associations-of-ibws/associations-of-ibws_en.png" alt="icon"> <h1>IB Resources </h1>
           <div class="tabBar">
             <div class="tabs">
@@ -64,9 +82,26 @@
             <source src="./img/stop_motion_book1.mp4">
           </video>
         </div>
-        <div style="width: 100%;" class="intro">
-          <h1>Welcome to IB Resources</h1>
-          <h3> Get the help you need to succeed in IB</h3>
+        <div class="mobile" style = "padding-top: 4%; padding-left: 4%; padding-right: 4%;">
+          <div style="width: 100%;padding-top: 2%;" class="intro">
+            <h1 style = "font-size: xx-large;">About IB Resources </h1>
+            <h3 style = "font-size: medium;"> Get the help you need to succeed in IB</h3>
+            <div style = "padding: 4%;">
+              <p> We are students from the IB May 2021 
+                batch and we understand how challenging IB can be. We too faced 
+                several challenges while writing our essays, IAs, EEs, and 
+                preparing for exams. Through our experience, we aim to provide 
+                essential resources to you so you can achieve your IB goals. 
+                Get in touch with us if you need any additional help/guidance. Good luck with IB!
+              </p> 
+            </div>
+          </div>
+        </div>
+        <div class="desktop">
+          <div style="width: 100%;" class="intro">
+            <h1>Welcome to IB Resources</h1>
+            <h3> Get the help you need to succeed in IB</h3>
+          </div>
         </div>
         <center>
         <div class = "desktop" style="width: 100%;" >
@@ -75,12 +110,12 @@
           </video>
         </div>
       </center>
-      <div style="width: 100%;" class="logo-panel">
+      <div style="width: 100%;" class="logo-panel" >
         <div class= "about-logo-column">
           <div class="info-box">
           <img class = "large-image" src="./img/research.png" alt="IAs">
           <br>
-           <p style = "font-size: small;" class="mobile"><center> IAs </center>  </p>
+           <div class = "mobile-text" style = "margin-left: 40%; font-size: medium;align-self: center;text-align: center;width: fit-content;" >  <h4 style="align-self: center;"> IAs </h4> </div> 
           <p class="desktop"> Student IAs with Grades </p> 
         </div>
         </div>
@@ -88,7 +123,7 @@
           <div class="info-box-2">
             <img class = "large-image-2" src="./img/resources.png" alt="Resources">
           <br>
-          <p style = "font-size: small;" class="mobile"><center>  Web Resources</center> </p>
+          <div class = "mobile-text" style = "margin-left: 20%; font-size: medium;align-self: center;text-align: center;width: fit-content;" >  <h4 style="align-self: center;"> Resources </h4> </div> 
           <p class="desktop">  Helpful Online Resources </p>
         </div>
         </div>
@@ -96,22 +131,23 @@
           <div class="info-box-3">
           <img class = "large-image-3" src="./img/book.png" alt="notes">
           <br>
-          <p style = "font-size: small;" class="mobile"> <center> Notes </center></p>
+          <div class = "mobile-text" style = "margin-left: 30%; font-size: medium;align-self: center;text-align: center;width: fit-content;" >  <h4 style="align-self: center;"> Notes </h4> </div> 
           <p class="desktop"> Personal Notes </p>
         </div>
         </div>
       </div>
-        <div style="width: 100%;height:100px;background-color: white;"></div>
-        <div style="width: 10%;height:10px;background-color: white;"></div>
-        <div style="width: 10%;height:10px;background-color: white;"></div>
-        <div style="width: 10%;height:10px;background-color: white;"></div>
-        <div style="width: 10%;height:10px;background-color: white;"></div>
-        <div style="width: 100%;height:100px;background-color: white;"></div>
-        <div style="width: 10%;height:10px;background-color: white;"></div>
-        <div style="width: 10%;height:10px;background-color: white;"></div>
-        <div style="width: 10%;height:10px;background-color: white;"></div>
-        <div style="width: 10%;height:10px;background-color: white;"></div>
+        <div class = "blank" style="width: 100%;height:100px;background-color: white;"></div>
+        <div class = "blank" style="width: 10%;height:10px;background-color: white;"></div>
+        <div class = "blank" style="width: 10%;height:10px;background-color: white;"></div>
+        <div class = "blank" style="width: 10%;height:10px;background-color: white;"></div>
+        <div class = "blank" style="width: 10%;height:10px;background-color: white;"></div>
+        <div class = "blank" style="width: 100%;height:100px;background-color: white;"></div>
+        <div class = "blank" style="width: 10%;height:10px;background-color: white;"></div>
+        <div class = "blank" style="width: 10%;height:10px;background-color: white;"></div>
+        <div class = "blank" style="width: 10%;height:10px;background-color: white;"></div>
+        <div class = "blank" style="width: 10%;height:10px;background-color: white;"></div>
       <div  class="about-and-contributors-panel">
+        <div class="desktop">
         <div class="about">
           <table class= "about-table">
             <tr>
@@ -127,6 +163,7 @@
               </td>
             </tr>
           </table>
+        </div>
         </div>
         <div class="contributors">
             <table style="width: 100%">

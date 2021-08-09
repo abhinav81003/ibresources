@@ -1,4 +1,5 @@
 
+
 var styles = {
     menu : {
         'display': 'flex',
@@ -46,7 +47,6 @@ var stylesOpen = {
    }
 };
 
-
 const closeSidebar = () => {
     var sidebar = document.getElementById('sidebar');
     Object.assign(sidebar.style, styles.sidebar);
@@ -67,7 +67,6 @@ const closeSidebar = () => {
     var notesHeading = document.getElementById('notes-heading');
     Object.assign(notesHeading.style, styles.headings);
 }
-
 const showSidebar = () => {
     var sidebar = document.getElementById('sidebar');
     Object.assign(sidebar.style, stylesOpen.sidebar);
@@ -88,3 +87,26 @@ const showSidebar = () => {
     var notesHeading = document.getElementById('notes-heading');
     Object.assign(notesHeading.style, stylesOpen.headings);
 }
+
+const showMobileSidebar = () => {
+    var body = document.getElementById('root');
+    body.style = "opacity: 0.3";
+    var mobileMenu = document.getElementById('mobileMenu');
+    mobileMenu.style = "display: flex";
+}
+
+const closeMobileMenu = () => {
+    var body = document.getElementById('root');
+    body.style = "opacity: 1";
+    var mobileMenu = document.getElementById('mobileMenu');
+    mobileMenu.style = "display: none";
+}
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 0) {
+      $('.header').fadeOut("fast");
+      $(".navbar").css("margin-top","0rem");
+    } else {
+      $('.header').fadeIn("fast");
+      $(".navbar").css("margin-top","2rem");
+    }
+  });
