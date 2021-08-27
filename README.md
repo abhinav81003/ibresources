@@ -2,6 +2,10 @@
 
 IB Resources is a platform like no other, providing free resources to IB students to help them succeed. The interactive user interface of the website allows the user to easily navigate to the different pages in the website which have resources for different subjects.
 
+# Check out the Website
+
+The website is currently live at: https://ibresources.web.app
+
 # Why Was It Developed
 
 The idea behind IB Resources originated from the fact that I had recently graduated from the IB Diploma and had a lot of tips and resources that I thought that I could share with IB students currently struggling with the same things I went through in the 2 years of my IB Diploma, therefore I assorted all the resources I had and planned out a website to provide help to current IB Students.
