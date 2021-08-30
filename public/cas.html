@@ -7,13 +7,90 @@
     <script src="/__/firebase/8.7.1/firebase-analytics.js"> </script>
     <script src="/__/firebase/init.js"></script>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" >
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="form.js"></script>
     <script src="index.js"></script>
     <link rel="icon" href="./img/syllabus.png" />
     <title> Core Components </title>
   </head>
 <body>
+  <!-- Sidebar Menu For Mobile -->
+  <div id = "mobileMenu" style="opacity: 0;" class="mobile-menu">
+    <div class="menu-tabs" style="width: 100%;margin-top: 6%;align-content: flex-end;">    
+      <div style="margin-top: 12%;" class="mobile-sidebar-tab">
+        <a style  = "text-decoration: none;color: black;width: 100%;" href="./index.html"><img class = "mobile-image" src="./img/home.png" alt="home"> Home </a>
+      </div>
+      <!-- first language links -->
+      <button style = "text-align: left;" id = "languageSideBarButton" onclick="toggleLanguageLinks()" style="background-color: rgb(248,248,248);" class="mobile-sidebar-tab" >
+        <a style  = "text-decoration: none;color: black;width: 100%;"><img class = "mobile-image" src="./img/eng.png" alt="home">Language and Literature</a>
+      </button>
+      <div id = "englishLinks" class="mobile-sidebar-links">
+        <a class="mobile-subject-links" href = "./english.html" > English </a>
+      </div>
+      <!-- second language links -->
+      <button style = "text-align: left;" id = "foreignSideBarButton" onclick="toggleForeignLinks()" class="mobile-sidebar-tab">
+        <a><img class = "mobile-image" src="./img/languages.png" alt="home">Language Acquisition</a> 
+      </button>  
+      <div id = "foreignLinks" class="mobile-sidebar-links">
+        <a class="mobile-subject-links" href = "./foreign.html" > French Ab Initio </a> 
+        <a class="mobile-subject-links" href = "./french-b.html" > French B </a> 
+        <a class="mobile-subject-links" href = "./spanish-ab.html" > Spanish Ab Initio </a> 
+        <a class="mobile-subject-links" href = "./spanish-b.html" > Spanish B </a>
+      </div>
+      <!-- Social links -->
+      <button style = "text-align: left;" id = "socialSideBarButton" onclick="toggleSocialLinks()" class="mobile-sidebar-tab"> 
+        <a><img class = "mobile-image" src="./img/test.png" alt="home">Individuals and Societies</a>  
+      </button> 
+      <div id = "socialLinks" class="mobile-sidebar-links">
+        <a class="mobile-subject-links" href = "./social.html" > Business Management </a> 
+        <a class="mobile-subject-links" href = "./economics.html" > Economics </a> 
+        <a class="mobile-subject-links" href = "./psychology.html" > Psychology </a> 
+        <a class="mobile-subject-links" href = "./itgs.html" > ITGS </a>
+        <a class="mobile-subject-links" href = "./history.html" > History </a>
+      </div>
+      <!-- Science Links -->
+      <button style = "text-align: left;"  id = "scienceSideBarButton" onclick="toggleScienceLinks()" class="mobile-sidebar-tab">                
+        <a><img class = "mobile-image" src="./img/atom.png" alt="home">Sciences</a>  
+      </button>
+      <div id = "scienceLinks" class="mobile-sidebar-links">
+        <a class="mobile-subject-links" href = "./sciences.html" > Computer Science </a> 
+        <a class="mobile-subject-links" href = "./physics.html" > Physics </a> 
+        <a class="mobile-subject-links" href = "./chemistry.html" > Chemistry </a> 
+        <a class="mobile-subject-links" href = "./biology.html" > Biology </a>
+      </div>
+      <!-- Math Links -->
+      <button style = "text-align: left;" id = "mathSideBarButton" onclick="toggleMathLinks()" class="mobile-sidebar-tab">           
+        <a><img class = "mobile-image" src="./img/mathematics.png" alt="home">Mathematics</a>          
+      </button>
+      <div id = "mathLinks" class="mobile-sidebar-links">
+        <a class="mobile-subject-links" href = "./maths.html" > Maths AA HL </a> 
+        <a class="mobile-subject-links" href = "./aihl.html" > Maths AI HL </a> 
+        <a class="mobile-subject-links" href = "./aasl.html" > Maths AA SL </a> 
+        <a class="mobile-subject-links" href = "./aisl.html" > Maths AI SL </a>
+      </div>  
+      <!-- Core Components  -->
+      <button style = "text-align: left;" id = "coreSideBarButton" onclick="toggleCoreLinks()" class="mobile-sidebar-tab">           
+        <a><img class = "mobile-image" src="./img/syllabus.png" alt="home">Core Components</a>          
+      </button>
+      <div id = "coreLinks" class="mobile-sidebar-links">
+        <a class="mobile-subject-links" href = "./core.html" > Extended Essay </a> 
+        <a class="mobile-subject-links" href = "./tok.html" > Theory Of Knowledge </a> 
+        <a id="currentLink" class="mobile-subject-links" href = "./cas.html" > CAS</a> 
+      </div>  
+    </div>
+  </div>
     <div id=root>
-          <!-- Header  -->
+      <div class="mobile">
+        <div id = "mobile-header" class="mobile-header">
+          <img style="height: 2.3rem;width: 2.3rem;margin-left: 3.3%;" class = "ib-icon" src="./img/syllabus.png" alt="icon"> <h1> CAS </h1>
+          <div class="button">
+            <button id="openButton" class = "mobile-menu-button" style = "font-size: 100%;background-color: white;box-shadow: none;opacity:1; position: fixed; left:85%; top:2%;border: none;" onclick="showMobileSidebar();toggleCoreLinks();highlightCurrentLink()" >  <img style="height: 1.8rem;" src='img/HMIcon.png'> </button> 
+            <button id="closeButton" class = "mobile-menu-button" style = "opacity: 0; font-size: 150%;background-color: white;box-shadow: none;" onclick="closeMobileMenu()"> X </button> 
+          </div>
+          </div>
+      </div>
+    <!-- Header  -->
     <div class ="desktop"> 
     <canvas class = "header"></canvas>
     <nav class="navbar">
@@ -55,32 +132,66 @@
       </div>
     </div>
     <!-- Body -->
-    <div class = "content">
+    <div id="content" class = "subject-content">
       <div id= "hamburgerMenu" style ="position:fixed;background-color: white; display:none; margin-top: 8%; width:100%;text-align: left;padding-left: 5%;" >  <button style = "position: absolute; font-size: 100%;border-color: white;background-color: white;box-shadow: none;" onclick="showSidebar()"><img style = "height: 2rem;" src="./img/HMIcon.png"></button> </div>
-            <center> <h2 id = "IA-heading" style="padding-top: 10%;margin-left: 20%;"> CAS Portfolio</h2></center>
-        <div style="padding-top: 3% ; margin-left: 20%; width:80%;" id="IAs"class="IAs">
+            <center> <h2 class="IA-heading" id = "IA-heading" style="padding-top: 10%;"> CAS Portfolios</h2></center>
+        <div style="padding-top: 3%;" id="IAs"class="IAs">
         <table style= "width:100%;">
           <tr style = "background-color: #0673bb;" >
             <th style= "width:33%;padding:2%;color: white;" > Student Name </th>
             <th style= "width:19%;padding:2%;color: white;" > Document Link</th>
           </tr>
-          <tr style="display: none;">
-            <h2  style = "display: none;" id="notes-heading">hi </h2>
-            <td style = "display: none;" id="notes">hi </td>
+          <tr>
+            <td class = "table-box" style= "width:50%;padding:2%;color: black;" > Romharsh Mittal</td>
+            <td class = "table-box" style= "width:50%;padding:2%;color: black;" > <a id="resource" target="_blank" href="https://d78e75dd-39c2-4f2d-a305-c95054bc5706.filesusr.com/ugd/77f91c_d3ab58e463b54f33b6cd7feb5d142294.pdf">PDF</a></td>
+          </tr>
+          <tr>
+            <td class = "table-box" style= "width:50%;padding:2%;color: black;" > Aekum Kamboj</td>
+            <td class = "table-box" style= "width:50%;padding:2%;color: black;" > <a id="resource" target="_blank" href="https://d78e75dd-39c2-4f2d-a305-c95054bc5706.filesusr.com/ugd/77f91c_426142f4721a4527be47a3fc940c0717.pdf">PDF</a></td>
+          </tr>
+          <tr>
+            <td class = "table-box" style= "width:50%;padding:2%;color: black;" > Elina Kher</td>
+            <td class = "table-box" style= "width:50%;padding:2%;color: black;" > <a id="resource" target="_blank" href="https://d78e75dd-39c2-4f2d-a305-c95054bc5706.filesusr.com/ugd/77f91c_0e3b4bff591343fbb2aa58a69c5dc5ab.pdf">PDF</a></td>
           </tr>
         </table>
       </div>
-      <center> <h2 id="resources-heading" style="padding-top: 10%;margin-left: 20%;"> CAS Resources</h2></center>
-        <div style="padding-top: 3% ; margin-left: 20%; width:80%;" id= "resources" class="IAs">
+      <center> <h2 class="IA-heading" id="resources-heading" style="padding-top: 10%;"> CAS Resources</h2></center>
+      <div style="padding-top: 3% ;" id= "resources" class="IAs">
         <table style= "width:100%;">
-          <tr style = "background-color: white;" >
-            
-            <th class= "table-box"style= "width:100%;padding:2%;color: black;" > <a id="resource" href="https://gdgoenka.wixsite.com/casgdgws"> 1. GDGWS CAS Website</a></th>
-            
+          <tr style = "background-color: #0673bb;" >
+            <th style= "width:33%;padding:2%;color: white;" > Resource Name </th>
+            <th style= "width:33%;padding:2%;color: white;" > Resource Type </th>
+            <th style= "width:33%;padding:2%;color: white;" > Link</th>
           </tr>
-        
+          <tr>
+            <td class = "table-box" style= "width:33%;padding:2%;color: black;" > GDGWS CAS Website </td>
+            <td class = "table-box" style= "width:33%;padding:2%;color: black;" > Website </td>
+            <td class = "table-box" style= "width:33%;padding:2%;color: black;" > <a id="resource" target="_blank" href="https://gdgoenka.wixsite.com/casgdgws"> Visit Link</a></td>
+          </tr>
         </table>
       </div>
+      <div id="notes-heading" class="IA-heading"> 
+        <div style="width: 100%;" class="contact" >  
+          <!-- <center> <h2 class = "very-white" style = "color: white ; font-size: 0.05;" > IBResources For You </h2></center> -->
+          <div id="contact-form" class="contact-heading">
+            <h2>  Want to Contribute?  </h2>
+          </div>
+          <div class="contact-text"> 
+            Get in touch with us to contribute to this website or to get more advice on IB.
+          </div>
+          Email: <a href = "mailto:gdgwsibresources@gmail.com">gdgwsibresources@gmail.com </a>
+          <form class="gform" method ="POST" data-email = "gdgwsibresources@gmail.com" action = "https://script.google.com/macros/s/AKfycbyt6C6SsziLoxhIaS3Gh5pZUUOt1nvCqHWhQDBcm_DxithT3OBbC1r3HkbneeLDU8IBeQ/exec">
+            <input name="name" class="input-box" type="text" placeholder="Name">
+            <input name="email" class="input-box" type="email" placeholder="Email">
+            <input name="subject" class="input-box" type="text" placeholder="Subject">
+            <input name="message" class="large-input-box" type="text" placeholder="Type your message here...">
+            <button  class = "submit-button">Submit</button>
+            <div style="display:none" class="thankyou_message">
+              <h5> Thanks for contacting us! We will get back to you soon! </h5>
+            </div>
+          </form>
+        </div>
+    </div>
     </div>
      <!-- Footer -->
     <div class = "footnote"> 
@@ -162,7 +273,8 @@
            </tr>
          </table>
        </div>
-    </div>     
+    </div>   
+    <div id= "footer" class = "footer"> <h4> @2021 by IB Resources</h4> </div>    
     <script src = "logic.js"></script>      
     <script data-cfasync="false" type="text/javascript" src="index.js"></script>
 </body>                   

@@ -8,12 +8,14 @@
     <script src="/__/firebase/init.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" >
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="icon" href="./favicon.ico" />
     <script src="form.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./morestyle.css">
+    <link rel="icon" href="./favicon.ico" />
+    
     <script src ="logic.js"></script>
     <script>
-      var firebaseConfig = {
+      const firebaseConfig = {
         apiKey: "AIzaSyD89d7WEOfgPed8lOxeHc6yDwT90VStiXc",
         authDomain: "ibresources-9bead.firebaseapp.com",
         databaseURL: "https://ibresources-9bead-default-rtdb.firebaseio.com",
@@ -29,36 +31,127 @@
     <title> IB Resources </title>
   </head>
   <body>
-      <div class="mobile">
-        <div id = "mobileMenu" class="mobile-menu">
-          <div class="menu-tabs">
-            <button onclick="closeMobileMenu()" style = " z-index: 3; border-color: white;background-color: white;box-shadow: none;" class="cross-button"> X </button>           
-            <div class="currentTab">
-            <a href="./index.html"> Home </a>
-            </div>
-              <a href = "./english.html">Language and Literature</a>
-              <a href="./foreign.html">Language Acquisition</a>              
-              <a href="./social.html">Individuals and Societies</a>             
-              <a href="./sciences.html">Sciences</a>              
-              <a href="./maths.html">Mathematics</a>              
-              <a href="./core.html">Core Components</a>              
-          </div>
+    <!-- Sidebar Menu For Mobile -->
+    <div id = "mobileMenu" style="opacity: 0;" class="mobile-menu">
+      <div class="menu-tabs" style="width: 100%;margin-top: 6%;align-content: flex-end;">    
+        <div style="margin-top: 12%;" class="mobile-current-sidebar-tab">
+          <a style  = "text-decoration: none;color: white;width: 100%;" href="./index.html"><img class = "mobile-image" src="./img/home.png" alt="home"> Home </a>
         </div>
+        <!-- first language links -->
+        <button style = "text-align: left;" id = "languageSideBarButton" onclick="toggleLanguageLinks()" class="mobile-sidebar-tab">
+          <a><img class = "mobile-image" src="./img/eng.png" alt="home">Language and Literature</a>
+        </button>
+        <div id = "englishLinks" class="mobile-sidebar-links">
+          <a class="mobile-subject-links" href = "./english.html" > English </a>
+        </div>
+        <!-- second language links -->
+        <button style = "text-align: left;" id = "foreignSideBarButton" onclick="toggleForeignLinks()" class="mobile-sidebar-tab">
+          <a><img class = "mobile-image" src="./img/languages.png" alt="home">Language Acquisition</a> 
+        </button>  
+        <div id = "foreignLinks" class="mobile-sidebar-links">
+          <a class="mobile-subject-links" href = "./foreign.html" > French Ab Initio </a> 
+          <a class="mobile-subject-links" href = "./french-b.html" > French B </a> 
+          <a class="mobile-subject-links" href = "./spanish-ab.html" > Spanish Ab Initio </a> 
+          <a class="mobile-subject-links" href = "./spanish-b.html" > Spanish B </a>
+        </div>
+        <!-- Social links -->
+        <button style = "text-align: left;" id = "socialSideBarButton" onclick="toggleSocialLinks()" class="mobile-sidebar-tab"> 
+          <a><img class = "mobile-image" src="./img/test.png" alt="home">Individuals and Societies</a>  
+        </button> 
+        <div id = "socialLinks" class="mobile-sidebar-links">
+          <a class="mobile-subject-links" href = "./social.html" > Business Management </a> 
+          <a class="mobile-subject-links" href = "./economics.html" > Economics </a> 
+          <a class="mobile-subject-links" href = "./psychology.html" > Psychology </a> 
+          <a class="mobile-subject-links" href = "./itgs.html" > ITGS </a>
+          <a class="mobile-subject-links" href = "./history.html" > History </a>
+        </div>
+        <!-- Science Links -->
+        <button style = "text-align: left;"  id = "scienceSideBarButton" onclick="toggleScienceLinks()" class="mobile-sidebar-tab">                
+          <a><img class = "mobile-image" src="./img/atom.png" alt="home">Sciences</a>  
+        </button>
+        <div id = "scienceLinks" class="mobile-sidebar-links">
+          <a class="mobile-subject-links" href = "./sciences.html" > Computer Science </a> 
+          <a class="mobile-subject-links" href = "./physics.html" > Physics </a> 
+          <a class="mobile-subject-links" href = "./chemistry.html" > Chemistry </a> 
+          <a class="mobile-subject-links" href = "./biology.html" > Biology </a>
+        </div>
+        <!-- Math Links -->
+        <button style = "text-align: left;" id = "mathSideBarButton" onclick="toggleMathLinks()" class="mobile-sidebar-tab">           
+          <a><img class = "mobile-image" src="./img/mathematics.png" alt="home">Mathematics</a>          
+        </button>
+        <div id = "mathLinks" class="mobile-sidebar-links">
+          <a class="mobile-subject-links" href = "./maths.html" > Maths AA HL </a> 
+          <a class="mobile-subject-links" href = "./aihl.html" > Maths AI HL </a> 
+          <a class="mobile-subject-links" href = "./aasl.html" > Maths AA SL </a> 
+          <a class="mobile-subject-links" href = "./aisl.html" > Maths AI SL </a>
+        </div>  
+        <!-- Core Components  -->
+        <button style = "text-align: left;" id = "coreSideBarButton" onclick="toggleCoreLinks()" class="mobile-sidebar-tab">           
+          <a><img class = "mobile-image" src="./img/syllabus.png" alt="home">Core Components</a>          
+        </button>
+        <div id = "coreLinks" class="mobile-sidebar-links">
+          <a class="mobile-subject-links" href = "./core.html" > Extended Essay </a> 
+          <a class="mobile-subject-links" href = "./tok.html" > Theory Of Knowledge </a> 
+          <a class="mobile-subject-links" href = "./cas.html" > CAS</a> 
+        </div>  
       </div>
+    </div>
     <div id = "root" >
-      <!-- Header  -->
+      <!-- Mobile Header  -->
       <div class="mobile">
-        <div class="mobile-header">
-          <img class = "ib-icon" src="https://www.ibo.org/globalassets/digital-toolkit/logos-and-programme-models/associations-of-ibws/associations-of-ibws_en.png" alt="icon"> <h1>  IB Resources </h1>
-           <button class = "mobile-menu-button" style = "position: relative;border-width: 0; font-size: 100%;background-color: white;box-shadow: none;" onclick="showMobileSidebar()"><img class = "mobile-menu-icon" src="./img/HMIcon.png"></button> 
+        <div id = "mobile-header" class="mobile-header">
+          <img class = "ib-icon" src="favicon.ico" alt="icon"> <h1>  IB Resources </h1>
+          <div class="button">
+            <button id="openButton" class = "mobile-menu-button" style = "font-size: 100%;background-color: white;box-shadow: none;opacity:1; position: fixed; left:85%; top:2%;border: none;" onclick="showMobileSidebar()"> <img style="height: 1.8rem;" src='img/HMIcon.png' </button> 
+            <button id="closeButton" class = "mobile-menu-button" style = "opacity: 0; font-size: 150%;background-color: white;box-shadow: none;" onclick="closeMobileMenu()"> X </button> 
+          </div>
+          </div>
+      </div>
+      <div class="mobile">
+        <div id="dots" style="display: flex;
+        position: fixed;
+        right: 2rem;
+        bottom: 2rem;
+        justify-content: center;
+        vertical-align: center;
+        align-content: center;
+        text-align: center;
+        flex-direction: row;
+        height: 4rem;
+        z-index: 3;
+        width: 4rem;
+        border-radius: 50%;
+        box-shadow: rgb(122, 122, 122) 2px 2px 2px;" class="mobile-menu-dots">
+        <a onclick="showMobileDotsMenu()" class="dots"> ... </a>
         </div>
       </div>
       
+        <div id="cross" style="display: none;
+        position: fixed;
+        right: 2rem;
+        bottom: 2rem;
+        justify-content: center;
+        vertical-align: center;
+        align-content: center;
+        text-align: center;
+        height: 4rem;
+        z-index: 3;
+        background-color: #32a4f0;
+        width: 4rem;
+        border-radius: 50%;
+        box-shadow: rgb(122, 122, 122) 2px 2px 2px;" class="mobile-menu-dots">
+        <a style="align-self: center;" onclick="closeMobileDotsMenu()" class="dots"> X </a>
+        </div>
+        <a id="mailButton"  href="mailto:gdgwsibresources@gmail.com" style="display:none;z-index: 4; flex:1;position:fixed;width: 3rem;height: 3rem;right: 2rem;bottom: 8rem;box-shadow: rgb(122, 122, 122) 2px 2px 2px;" class="social-button"> <img style="z-index: 4;flex:1;position:fixed;right: 2rem;bottom: 7rem; width: 4rem;height: 4rem;" src="./img/email.png">  </a>
+        <a id="facebookButton"  href="https://www.facebook.com/IB-Resources-163143072493461" style="display:none;z-index: 4; flex:1;position:fixed;width: 3rem;height: 3rem;right: 2rem;bottom: 12rem;box-shadow: rgb(122, 122, 122) 2px 2px 2px;" class="social-button"> <img style="z-index: 4;flex:1;position:fixed;right: 2rem;bottom: 12rem; width: 4rem;height: 4rem;" src="./img/facebook-logo.png">  </a>
+        <a id="instaButton"  href="https://www.instagram.com/ibresources_official/" style="display:none;z-index: 4; flex:1;position:fixed;width: 3rem;height: 3rem;right: 2rem;bottom: 17rem;box-shadow: rgb(122, 122, 122) 2px 2px 2px;" class="social-button"> <img style="z-index: 4;flex:1;position:fixed;right: 2rem;bottom: 17rem; width: 4rem;height: 4rem;" src="./img/instagram.png">  </a>
+        
+      <!-- Desktop Header  -->
        <div class ="desktop"> 
-       <canvas class = "header"></canvas>
+       <div class = "header">  <div class="social-media">  <a style="text-decoration: none;" target="_blank" href="https://www.facebook.com/IB-Resources-163143072493461"> <img class = "social-icon" src="img/facebook-logo.png"> </a> <a style="text-decoration: none;" target="_blank" href="https://www.instagram.com/ibresources_official/"> <img class = "social-icon" src="img/instagram.png"> </a>  <a style="text-decoration: none;" target="_blank" href="mailto:gdgwsibresources@gmail.com"> <img class = "social-icon" src="img/email.png"> </a> </div> </div>
        <div class = "navbar-and-header">
         <nav id = "navbar" class="navbar">
-          <img class = "ib-image" src="https://www.ibo.org/globalassets/digital-toolkit/logos-and-programme-models/associations-of-ibws/associations-of-ibws_en.png" alt="icon"> <h1>IB Resources </h1>
+          <img class = "ib-image" src="favicon.ico" alt="icon"> <h1>IB Resources </h1>
           <div class="tabBar">
             <div class="tabs">
               <div class="currentTab">
@@ -76,7 +169,7 @@
        </div>
       </div>
        <!-- Body -->
-       <div class="content">
+       <div id = "content" class="content" >
         <div class = "mobile" style="width: 100%;" >
           <video class="video" autoplay>
             <source src="./img/stop_motion_book1.mp4">
@@ -84,10 +177,10 @@
         </div>
         <div class="mobile" style = "padding-top: 4%; padding-left: 4%; padding-right: 4%;">
           <div style="width: 100%;padding-top: 2%;" class="intro">
-            <h1 style = "font-size: xx-large;">About IB Resources </h1>
-            <h3 style = "font-size: medium;"> Get the help you need to succeed in IB</h3>
-            <div style = "padding: 4%;">
-              <p> We are students from the IB May 2021 
+            <h1 style = "font-size: xx-large;">About IB Resources</h1>
+            <h3 class="mobile-subtitle" style = "font-size: medium;"> Get the help you need to succeed in IB</h3>
+            <div class = "mobile-text" style = "padding: 4%;">
+              <p style="text-align: justify;"> We are students from the IB May 2021 
                 batch and we understand how challenging IB can be. We too faced 
                 several challenges while writing our essays, IAs, EEs, and 
                 preparing for exams. Through our experience, we aim to provide 
@@ -250,7 +343,7 @@
             <input name="email" class="input-box" type="email" placeholder="Email">
             <input name="subject" class="input-box" type="text" placeholder="Subject">
             <input name="message" class="large-input-box" type="text" placeholder="Type your message here...">
-            <button class = "submit-button">Submit</button>
+            <button  class = "submit-button">Submit</button>
             <div style="display:none" class="thankyou_message">
               <h5> Thanks for contacting us! We will get back to you soon! </h5>
              </div>
@@ -336,7 +429,8 @@
            </tr>
          </table>
        </div>
-       <div class = "footer"> <h4> @2021 by IB Resources</h4> </div>
+       <div id="footer" class = "footer"> <h4> @2021 by IB Resources</h4> </div>
+       <script src ="logic.js"></script>
        <script data-cfasync="false" type="text/javascript" src="index.js"></script>
 </body>                   
 </html>

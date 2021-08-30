@@ -1,0 +1,39 @@
+.mobile-menu-dots{
+    display: flex;
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    justify-content: center;
+    vertical-align: center;
+    align-content: center;
+    text-align: center;
+    flex-direction: row;
+    height: 4rem;
+    z-index: 3;
+    width: 4rem;
+    border-radius: 50%;
+    background-color: #32a4f0;
+    box-shadow: rgb(122, 122, 122) 2px 2px 2px;
+}
+.dots {
+    color:rgb(255, 255, 255);
+    background-color: #32a4f0;
+    flex: 1;
+    font-weight: 1000;
+    font-size: xx-large;
+  }
+  .dots:hover {
+    cursor: pointer;
+  }
+  .dots:active {
+    background-color:rgb(40, 120, 185);
+  }
+  .social-button{
+    bottom: 8rem;
+    background-color:rgb(201, 219, 235);
+    border-color: rgba(55, 97, 214, 0.911);
+    border-width: 0.4rem;
+    flex: 1;
+    font-weight: 1000;
+    font-size: xx-large;
+  }

@@ -1,7 +1,7 @@
 {
-  "hosting":  {
-    "site": "ibresources",
+  "hosting": {
     "public": "public",
+    "target" : "ibresources",
     "ignore": [
       "firebase.json",
       "**/.*",
@@ -10,5 +10,8 @@
   },
   "database": {
     "rules": "database.rules.json"
+  },
+  "storage": {
+    "rules": "storage.rules"
   }
 }
