@@ -4,7 +4,7 @@ IB Resources is a platform like no other, providing free resources to IB student
 
 # Check out the Website
 
-The website is currently live at: https://ibresources.web.app
+The website is currently live at: https://ibresources.study or https://m-ibresources.web.app.
 
 # Why Was It Developed
 
